@@ -12,7 +12,7 @@ field_name: field_images
 entity_type: block_content
 bundle: homepage_slide_banner
 label: Images
-description: ''
+description: 'Images 1920 x 900'
 required: true
 translatable: false
 default_value: {  }

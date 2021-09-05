@@ -1,0 +1,19 @@
+uuid: c9acc3d5-a479-4e93-bb9c-f79382e60e04
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+    - field.storage.block_content.field_title
+id: block_content.homepage_gioi_thieu.field_title
+field_name: field_title
+entity_type: block_content
+bundle: homepage_gioi_thieu
+label: 'Tiêu đề'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

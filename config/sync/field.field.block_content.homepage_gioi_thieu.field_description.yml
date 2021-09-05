@@ -1,0 +1,19 @@
+uuid: 27c3824c-785b-4474-afd7-ad5151a98d15
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+    - field.storage.block_content.field_description
+id: block_content.homepage_gioi_thieu.field_description
+field_name: field_description
+entity_type: block_content
+bundle: homepage_gioi_thieu
+label: 'Mô tả'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

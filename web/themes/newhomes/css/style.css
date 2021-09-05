@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #cda34f;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-dark {
+    background-color: #1e1e28;
+}
+
+.bg-dark-blue {
+    background-color: #2e2e3f;
+}
+
+.block-title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    display: inline-block;
+    border-bottom: 1px solid var(--main-color);
+    padding: 0 0 5px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.btn-default {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: inline-flex;
+    background: var(--main-color);
+}

@@ -1,0 +1,23 @@
+uuid: 2d22fc0f-de3c-497f-a9b1-79d5e20ed33e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slide_banner
+    - field.field.block_content.homepage_slide_banner.body
+  module:
+    - text
+id: block_content.homepage_slide_banner.default
+targetEntityType: block_content
+bundle: homepage_slide_banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

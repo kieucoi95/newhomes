@@ -1,0 +1,11 @@
+uuid: 72221d12-f38d-4e04-8ad0-754fd68c6a2f
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slide_banner
+id: block_content.homepage_slide_banner
+target_entity_type_id: block_content
+target_bundle: homepage_slide_banner
+default_langcode: site_default
+language_alterable: false

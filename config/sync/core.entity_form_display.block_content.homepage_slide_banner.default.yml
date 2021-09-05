@@ -1,0 +1,40 @@
+uuid: f8854cf0-a4a9-49f0-9d07-958e8c67b578
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slide_banner
+    - field.field.block_content.homepage_slide_banner.body
+  module:
+    - text
+id: block_content.homepage_slide_banner.default
+targetEntityType: block_content
+bundle: homepage_slide_banner
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

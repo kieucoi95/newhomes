@@ -1,0 +1,8 @@
+uuid: b00f947c-9fec-435e-ba10-cc8997c2c254
+langcode: vi
+status: true
+dependencies: {  }
+id: homepage_slide_banner
+label: 'Homepage - Slide banner'
+revision: 0
+description: ''

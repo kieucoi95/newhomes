@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '14ead4e2721bf932ae7c5df70cf8a2be4b8dc063',
+        'reference' => 'b33fd00e616ddd53aaceb8f7211fd40180a26fff',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -556,6 +556,15 @@
                 0 => '8.9.18',
             ),
         ),
+        'drupal/devel' => array(
+            'pretty_version' => '2.1.0',
+            'version' => '2.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/devel',
+            'aliases' => array(),
+            'reference' => '8.x-2.1',
+            'dev_requirement' => false,
+        ),
         'drupal/dynamic_page_cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -802,7 +811,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '14ead4e2721bf932ae7c5df70cf8a2be4b8dc063',
+            'reference' => 'b33fd00e616ddd53aaceb8f7211fd40180a26fff',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(
@@ -1428,7 +1437,7 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-php80',
             'aliases' => array(),
             'reference' => '1100343ed1a92e3a38f9ae122fc0eb21602547be',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-util' => array(
             'pretty_version' => 'v1.17.0',
@@ -1500,7 +1509,7 @@
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
             'reference' => '7f65c44c2ce80d3a0fcdb6385ee0ad535e45660c',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/yaml' => array(
             'pretty_version' => 'v3.4.41',

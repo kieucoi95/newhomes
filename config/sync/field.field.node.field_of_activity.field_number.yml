@@ -1,0 +1,19 @@
+uuid: b5c259d4-cdcb-4946-84b8-2120bc1211f7
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number
+    - node.type.field_of_activity
+id: node.field_of_activity.field_number
+field_name: field_number
+entity_type: node
+bundle: field_of_activity
+label: Số
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

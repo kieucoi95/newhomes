@@ -16,6 +16,7 @@
                 clickable: true,
             },
         });
+
         // Home about us
         var home_banner = new Swiper(".about-us-slide", {
             navigation: {
@@ -31,6 +32,24 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+
+        // Field of activity
+        var home_banner = new Swiper(".field_of_activity", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
         });
 
     });

@@ -1,5 +1,5 @@
-.path-frontpage .swiper-button-prev, 
-.path-frontpage .swiper-button-next {
+.path-frontpage .swiper-container .swiper-button-prev, 
+.path-frontpage .swiper-container .swiper-button-next {
     height: 40px;
     width: 40px;
     display: flex;
@@ -50,4 +50,70 @@
 
 #about-us .btn-default {
     margin-top: 2rem;
+}
+
+#about-us #about-us-slide {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+}
+
+#field_of_activity {
+    padding: 3rem 0;
+}
+
+#field_of_activity .swiper-slide {
+    height: auto;
+}
+
+#field_of_activity .swiper-slide .item {
+    height: 100%;
+    border: 1px solid var(--main-color);
+}
+
+#field_of_activity .swiper-slide .item .img {
+    padding: 5px;
+}
+
+#field_of_activity .inner {
+    padding: 15px;
+} 
+
+#field_of_activity .inner .info {
+    display: flex;
+    align-items: center;
+}
+
+#field_of_activity h3.node_title {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 69px;
+    display: -webkit-box;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#field_of_activity .nember {
+    font-size: 60px;
+    font-weight: 600;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--main-color);
+    line-height: 60px;
+    color: var(--main-color);
+}
+
+#field_of_activity .content_link {
+    text-align: right;
+    margin-top: 15px;
+}
+
+#field_of_activity .content_link a {
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    display: inline-block;
 }

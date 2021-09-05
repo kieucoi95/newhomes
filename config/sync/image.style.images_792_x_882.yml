@@ -1,0 +1,15 @@
+uuid: 74365301-173a-457f-9cb8-c7192152cfde
+langcode: vi
+status: true
+dependencies: {  }
+name: images_792_x_882
+label: 'Images 792 x 882'
+effects:
+  ce9cfb05-a3df-4837-8c6e-d27d75bddaff:
+    uuid: ce9cfb05-a3df-4837-8c6e-d27d75bddaff
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 792
+      height: 882
+      anchor: center-center

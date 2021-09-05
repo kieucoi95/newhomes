@@ -1,0 +1,23 @@
+uuid: 6648d924-5faa-49f6-9a16-526505fe4e53
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.field_of_activity
+  module:
+    - text
+id: node.field_of_activity.body
+field_name: body
+entity_type: node
+bundle: field_of_activity
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

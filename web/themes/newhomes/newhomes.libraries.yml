@@ -1,0 +1,33 @@
+global-styling:
+  css:
+    theme:
+      libraries/bootstrap/css/bootstrap.min.css: {}
+      css/style.css: {}
+  js:
+    libraries/bootstrap/js/bootstrap.min.js: {}
+    js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+
+fontawesome:
+  css:
+    theme:
+      libraries/fontawesome/css/all.min.css: {}
+  js:
+    libraries/fontawesome/js/all.min.js: {}
+
+swiper:
+  css:
+    theme:
+      libraries/swiper/swiper-bundle.css: {}
+  js:
+    libraries/swiper/swiper-bundle.js: {}
+
+front_page:
+  css:
+    theme:
+      css/front_page.css: {}
+  js:
+    js/front_page.js: {}

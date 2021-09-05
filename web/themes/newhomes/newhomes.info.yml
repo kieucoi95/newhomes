@@ -1,0 +1,15 @@
+name: NewHomes
+type: theme
+description: This is a NewHomes theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+# Defines the base theme
+base theme: classy
+# Defines libraries group in which we can add css/js.
+libraries:
+  - newhomes/global-styling
+# Regions
+regions:
+  header: Header
+  content: Content
+  footer: Footer

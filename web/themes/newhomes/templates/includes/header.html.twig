@@ -1,0 +1,40 @@
+{{ attach_library('newhomes/fontawesome') }}
+<header>
+  {# Header fix top #}
+  <div class="header-fix">
+    <div class="container">
+      <div class="logo">
+        <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
+      </div>
+      <div class="main-menu d-none d-lg-block">
+        {{ drupal_menu('main') }}
+      </div>
+      <div class="btn-menu-mobile d-lg-none d-block">
+        <i class="fad fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  {# Header #}
+  <div id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
+      </div>
+      <div class="main-menu d-none d-lg-block">
+        {{ drupal_menu('main') }}
+      </div>
+      <div class="btn-menu-mobile d-lg-none d-block">
+        <i class="fad fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  <div id="header-mobile" class="d-lg-none d-block">
+    <div class="logo">
+      <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo"></a>
+    </div>
+    <div class="main-menu-mobile">
+      {{ drupal_menu('main') }}
+    </div>
+  </div>
+  <div class="bg-main-menu-mb d-lg-none d-block"></div>
+</header>

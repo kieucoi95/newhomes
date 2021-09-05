@@ -31,18 +31,19 @@
     {{ title_prefix }}
     {{ title_suffix }}
     {% block content %}
-        <div class="swiper homes-slide">
+        <div class="swiper-container homes-slide">
             <div class="swiper-wrapper">
                 {% for key, item in elements.content['#block_content'].field_images %}
                     {% if key matches '/^[-+]?[0-9]*\\.?[0-9]+$/' %}
                     <div class="swiper-slide">
-                        <img src="{{ item.entity.uri.value | image_style('images_1920_x_900') }}" alt="{{ item.entity.alt }}">
+                        <img src="{{ item.entity.uri.value | image_style('images_1920_x_900') }}" alt="{{ item.alt }}">
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     {% endblock %}
 </div>

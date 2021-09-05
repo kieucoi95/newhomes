@@ -1,0 +1,66 @@
+uuid: 98051b0f-3beb-438e-9177-5d55715d6331
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+    - field.field.block_content.homepage_gioi_thieu.field_description
+    - field.field.block_content.homepage_gioi_thieu.field_images
+    - field.field.block_content.homepage_gioi_thieu.field_link
+    - field.field.block_content.homepage_gioi_thieu.field_title
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.homepage_gioi_thieu.default
+targetEntityType: block_content
+bundle: homepage_gioi_thieu
+mode: default
+content:
+  field_description:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_images:
+    weight: 29
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

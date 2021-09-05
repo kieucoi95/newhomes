@@ -1,0 +1,8 @@
+uuid: 920b0310-dbf7-492c-ac8c-a044fff666b0
+langcode: vi
+status: true
+dependencies: {  }
+id: homepage_gioi_thieu
+label: 'Homepage - Giới thiệu'
+revision: 0
+description: ''

@@ -1,0 +1,19 @@
+uuid: dcbbd498-fab6-4409-99b4-491ee8a051ad
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+    - field.storage.block_content.field_link
+id: block_content.homepage_gioi_thieu.field_link
+field_name: field_link
+entity_type: block_content
+bundle: homepage_gioi_thieu
+label: 'Liên kết'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

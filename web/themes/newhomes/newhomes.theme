@@ -11,6 +11,7 @@ use \Drupal\block_content\BlockContentInterface;
 use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\media\Entity\Media;
 use Drupal\file\Entity\File;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -43,18 +44,18 @@ function newhomes_preprocess_node(&$variables) {
  * Implements hook_preprocess_HOOK() for block.html.twig.
  */
 function newhomes_preprocess_block(&$variables) {
-  $variables['base_path'] = base_path();
-  $content = $variables['elements']['content'];
+    $variables['base_path'] = base_path();
+    $content = $variables['elements']['content'];
 
-  // Page title
-  $request = \Drupal::request();
-  $route_match = \Drupal::routeMatch();
-  $route = \Drupal::routeMatch()->getCurrentRouteMatch()->getRouteObject();
-  $variables['page_title'] = $route->getDefault('_title');
-  if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
-    $blockType = $content['#block_content']->bundle();
+    // Page title
+    $request = \Drupal::request();
+    $route_match = \Drupal::routeMatch();
+    $route = \Drupal::routeMatch()->getCurrentRouteMatch()->getRouteObject();
+    $variables['page_title'] = $route->getDefault('_title');
+    if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
+        $blockType = $content['#block_content']->bundle();
 
-  }
+    }
 }
 
 /**
@@ -67,8 +68,57 @@ function newhomes_preprocess_menu(&$variables) {
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
 function newhomes_preprocess(&$variables) {
-  // Get path logo
-  $variables['logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+    // Get path logo
+    $variables['logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
+ */
+function newhomes_preprocess_views_view(&$variables) {
+    $view = $variables['view'];
+    $id = $view->id();
+    $name = $variables['display_id'];
+
+    if ($name == 'block_1' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $uri = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_image[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // Number
+            if (!empty($result->_entity->field_number)) {
+                $number = $trans->field_number->value;
+            }
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'uri' => $uri,
+                'title' => $title,
+                'number' => $number
+            ];
+
+        }
+    }
 }
 
 /**
@@ -89,7 +139,7 @@ function newhomes_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 function newhomes_theme_suggestions_block_alter(array &$suggestions, array $variables)
 {
   // Block suggestions for custom block bundles.
-  if (isset($variables['elements']['content']['#block_content'])) {
-    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
-  }
+    if (isset($variables['elements']['content']['#block_content'])) {
+        array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+    }
 }

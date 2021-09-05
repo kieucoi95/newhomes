@@ -1,0 +1,18 @@
+uuid: 0be873ae-d59d-47c5-b930-53e9ad2a762c
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.field_of_activity
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.field_of_activity
+target_entity_type_id: node
+target_bundle: field_of_activity
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,35 @@
+uuid: 38ec9a7a-ba2a-4e50-87ce-595a11745660
+langcode: vi
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.field_of_activity.body
+    - field.field.node.field_of_activity.field_image
+    - field.field.node.field_of_activity.field_number
+    - node.type.field_of_activity
+  module:
+    - text
+    - user
+id: node.field_of_activity.teaser
+targetEntityType: node
+bundle: field_of_activity
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_number: true
+  langcode: true

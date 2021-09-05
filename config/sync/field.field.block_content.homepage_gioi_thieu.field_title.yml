@@ -12,7 +12,7 @@ bundle: homepage_gioi_thieu
 label: 'Tiêu đề'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -57,6 +57,10 @@
   <div id="about-us" class="bg-dark-blue">
     {{ drupal_entity('block', 'homepagegioithieu') }}
   </div>
+  {# field of activity #}
+  <div id="field_of_activity" class="bg-dark">
+    {{ drupal_view('node_front_page', 'block_1') }}
+  </div>
 </main>
 {% include directory ~ '/templates/includes/footer.html.twig' %}
 

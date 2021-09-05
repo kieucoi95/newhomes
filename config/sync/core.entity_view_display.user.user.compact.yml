@@ -1,5 +1,5 @@
 uuid: 40ec50a0-0e33-4fad-94d9-19adfbbffaa8
-langcode: en
+langcode: vi
 status: true
 dependencies:
   config:

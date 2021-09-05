@@ -1,5 +1,5 @@
 uuid: ee72ed38-9fa0-4f11-b974-1abdb00b1970
-langcode: en
+langcode: vi
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: article
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

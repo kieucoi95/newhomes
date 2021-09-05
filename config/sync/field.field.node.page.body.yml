@@ -1,5 +1,5 @@
 uuid: 1745baa3-fe75-4d09-bcf5-398c13698f62
-langcode: en
+langcode: vi
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: page
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,5 +1,5 @@
 uuid: 60b4e716-cd83-40e4-b6d8-14173b59629a
-langcode: en
+langcode: vi
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: article
 label: Comments
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     status: 2

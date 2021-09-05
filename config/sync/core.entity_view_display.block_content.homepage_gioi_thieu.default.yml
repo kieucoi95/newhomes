@@ -1,0 +1,51 @@
+uuid: 563d3b2f-4e55-4f67-82f0-7bfb498e067e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+    - field.field.block_content.homepage_gioi_thieu.field_description
+    - field.field.block_content.homepage_gioi_thieu.field_images
+    - field.field.block_content.homepage_gioi_thieu.field_link
+    - field.field.block_content.homepage_gioi_thieu.field_title
+  module:
+    - image
+id: block_content.homepage_gioi_thieu.default
+targetEntityType: block_content
+bundle: homepage_gioi_thieu
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_images:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

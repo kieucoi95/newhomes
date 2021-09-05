@@ -1,0 +1,11 @@
+uuid: d70fbfa8-a228-49b5-82cf-5824a5b52bf8
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_gioi_thieu
+id: block_content.homepage_gioi_thieu
+target_entity_type_id: block_content
+target_bundle: homepage_gioi_thieu
+default_langcode: site_default
+language_alterable: false

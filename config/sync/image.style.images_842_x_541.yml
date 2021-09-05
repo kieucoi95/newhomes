@@ -1,0 +1,15 @@
+uuid: 55b5c350-660c-4b1c-b420-1f4e44229e62
+langcode: vi
+status: true
+dependencies: {  }
+name: images_842_x_541
+label: 'Images 842 x 541'
+effects:
+  68cc8d7f-230e-4bfc-8699-a41116cd506a:
+    uuid: 68cc8d7f-230e-4bfc-8699-a41116cd506a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 842
+      height: 541
+      anchor: center-center

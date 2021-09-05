@@ -1,0 +1,31 @@
+uuid: 2bf3f297-1710-4a4d-9f20-e8b7da4d8785
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_slide_banner:abbc52e8-aabb-47cc-9a9b-ff0c0cd4b19a'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: homepageslidebanner
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:abbc52e8-aabb-47cc-9a9b-ff0c0cd4b19a'
+settings:
+  id: 'block_content:abbc52e8-aabb-47cc-9a9b-ff0c0cd4b19a'
+  label: 'Homepage - Slide banner '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

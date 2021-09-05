@@ -48,7 +48,12 @@
 {{ attach_library('newhomes/swiper') }}
 {{ attach_library('newhomes/front_page') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
-
+<main role="main">
+  {# Slide banner #}
+  <div id="home-slide">
+    {{ drupal_entity('block', 'homepageslidebanner') }}
+  </div>
+</main>
 {% include directory ~ '/templates/includes/footer.html.twig' %}
 
 

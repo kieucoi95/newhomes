@@ -4,20 +4,22 @@ status: true
 dependencies:
   config:
     - block_content.type.homepage_slide_banner
-    - field.field.block_content.homepage_slide_banner.body
+    - field.field.block_content.homepage_slide_banner.field_images
   module:
-    - text
+    - image
 id: block_content.homepage_slide_banner.default
 targetEntityType: block_content
 bundle: homepage_slide_banner
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_images:
     weight: 0
-    settings: {  }
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
+    type: image
     region: content
 hidden:
   langcode: true

@@ -1,0 +1,18 @@
+uuid: 4f8812fe-8bc1-4dc4-baca-56da5ebd62e5
+langcode: vi
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Dự án'
+type: du_an
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

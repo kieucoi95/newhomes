@@ -36,3 +36,10 @@ field_of_activity:
   css:
     theme:
       css/field_of_activity.css: {}
+
+project:
+  css:
+    theme:
+      css/project.css: {}
+  js:
+    js/project.js: {}

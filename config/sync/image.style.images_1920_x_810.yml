@@ -1,0 +1,15 @@
+uuid: 07ead4e4-78bd-4d02-8939-b6beb78d42f3
+langcode: vi
+status: true
+dependencies: {  }
+name: images_1920_x_810
+label: 'Images 1920 x 810'
+effects:
+  89a52083-8fb8-48e7-b19d-98e6ed69ac46:
+    uuid: 89a52083-8fb8-48e7-b19d-98e6ed69ac46
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 810
+      anchor: center-center

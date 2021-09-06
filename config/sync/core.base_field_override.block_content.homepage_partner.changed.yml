@@ -1,0 +1,18 @@
+uuid: cee3833e-6790-4d7a-ac2b-033d622965e3
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_partner
+id: block_content.homepage_partner.changed
+field_name: changed
+entity_type: block_content
+bundle: homepage_partner
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

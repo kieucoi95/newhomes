@@ -1,0 +1,19 @@
+uuid: 5c5b9c1d-9ed4-43b7-b06f-3b428100acc9
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_loai_hinh_du_an
+    - node.type.du_an
+id: node.du_an.field_loai_hinh_du_an
+field_name: field_loai_hinh_du_an
+entity_type: node
+bundle: du_an
+label: 'Loại hình dự án'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

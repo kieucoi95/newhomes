@@ -1,0 +1,15 @@
+uuid: 104c5e5d-b16d-449b-9af6-e5dd45f06c7a
+langcode: vi
+status: true
+dependencies: {  }
+name: images_640_x_270
+label: 'Images 640 x 270'
+effects:
+  917688a9-e219-4a12-870d-279a08f0aee5:
+    uuid: 917688a9-e219-4a12-870d-279a08f0aee5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 270
+      anchor: center-center

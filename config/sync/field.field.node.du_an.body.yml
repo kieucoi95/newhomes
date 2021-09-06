@@ -1,0 +1,23 @@
+uuid: dea85138-9a8c-47d0-a8dd-1ea0f74a1bb7
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.du_an
+  module:
+    - text
+id: node.du_an.body
+field_name: body
+entity_type: node
+bundle: du_an
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

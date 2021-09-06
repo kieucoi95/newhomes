@@ -1,0 +1,116 @@
+.page-node-type-du-an {
+    background: #2e2e3f;
+}
+
+article {
+    padding: 3rem 0;
+}
+
+h1.node_title {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.field--label-inline {
+    display: flex;
+}
+
+.field--label-inline .field__label {
+    width: 180px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.field--label-inline .field__item {
+    width: calc(100% - 180px);
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.list_item > .field:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list_item .field .field__label:before {
+    font-family: 'Font Awesome 5 Pro';
+    color: var(--main-color);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.list_item .field.field--name-field-vi-tri .field__label:before {
+    content: '\f3c5';
+}
+
+.list_item .field.field--name-field-loai-hinh-du-an .field__label:before {
+    content: '\f64f';
+}
+
+.list_item .field.field--name-field-chu-dau-tu .field__label:before {
+    content: '\f508';
+}
+
+.list_item .field.field--name-field-tong-dien-tich .field__label:before {
+    content: '\f5ae';
+}
+
+.list_item .field.field--name-field-tien-ich .field__label:before {
+    content: '\f00a';
+}
+
+.list_item .field.field--name-field-doi-tac .field__label:before {
+    content: '\f0c0';
+}
+
+.list_item .field.field--name-field-vai-tro-tham-gia .field__label:before {
+    content: '\f507';
+}
+
+.desc h2.title_field {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.desc .field--name-body * {
+    color: #fff;
+}
+
+#gallery_project {
+    text-align: center;
+}
+
+h2.gallery_title {
+    font-size: 28px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--main-color);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.gallery_project {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--main-color);
+}
+
+.gallery_project_thmub  .swiper-slide.active {
+    border: 1px solid var(--main-color);
+}
+
+.gallery_project_thmub  .swiper-slide {
+    padding: 5px;
+    cursor: pointer;
+}

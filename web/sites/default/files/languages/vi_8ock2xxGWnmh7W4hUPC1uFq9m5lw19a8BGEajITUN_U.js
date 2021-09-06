@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Edit":"S\u1eeda","(active tab)":"(tab ho\u1ea1t \u0111\u1ed9ng)","Cancel":"H\u1ee7y b\u1ecf"}},"pluralFormula":{"default":0}};

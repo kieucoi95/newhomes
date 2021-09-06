@@ -1,0 +1,53 @@
+uuid: 17fce50e-0902-4fcf-b31c-4b9eed7cb188
+langcode: vi
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.du_an.body
+    - field.field.node.du_an.field_chu_dau_tu
+    - field.field.node.du_an.field_chuyen_muc
+    - field.field.node.du_an.field_doi_tac
+    - field.field.node.du_an.field_image
+    - field.field.node.du_an.field_images
+    - field.field.node.du_an.field_link_youtube
+    - field.field.node.du_an.field_loai_hinh_du_an
+    - field.field.node.du_an.field_tien_ich
+    - field.field.node.du_an.field_tong_dien_tich
+    - field.field.node.du_an.field_vai_tro_tham_gia
+    - field.field.node.du_an.field_vi_tri
+    - node.type.du_an
+  module:
+    - text
+    - user
+id: node.du_an.teaser
+targetEntityType: node
+bundle: du_an
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_chu_dau_tu: true
+  field_chuyen_muc: true
+  field_doi_tac: true
+  field_image: true
+  field_images: true
+  field_link_youtube: true
+  field_loai_hinh_du_an: true
+  field_tien_ich: true
+  field_tong_dien_tich: true
+  field_vai_tro_tham_gia: true
+  field_vi_tri: true
+  langcode: true

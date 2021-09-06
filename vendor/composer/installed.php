@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b33fd00e616ddd53aaceb8f7211fd40180a26fff',
+        'reference' => '30e08254c2c4fc72435b8677046188d44690f571',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -598,6 +598,15 @@
                 0 => '8.9.18',
             ),
         ),
+        'drupal/field_group' => array(
+            'pretty_version' => '3.2.0',
+            'version' => '3.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/field_group',
+            'aliases' => array(),
+            'reference' => '8.x-3.2',
+            'dev_requirement' => false,
+        ),
         'drupal/field_layout' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -811,7 +820,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b33fd00e616ddd53aaceb8f7211fd40180a26fff',
+            'reference' => '30e08254c2c4fc72435b8677046188d44690f571',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(
@@ -981,6 +990,15 @@
             'replaced' => array(
                 0 => '8.9.18',
             ),
+        ),
+        'drupal/youtube' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/youtube',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
         ),
         'drush/drush' => array(
             'pretty_version' => '10.6.0',

@@ -1,0 +1,11 @@
+uuid: 73f7c711-b10e-4ec8-adc5-b0e13992b265
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.page_banner
+id: block_content.page_banner
+target_entity_type_id: block_content
+target_bundle: page_banner
+default_langcode: site_default
+language_alterable: false

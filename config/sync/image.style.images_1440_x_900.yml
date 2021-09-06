@@ -1,0 +1,15 @@
+uuid: 795153e9-489c-4a99-b06f-0a037621d086
+langcode: vi
+status: true
+dependencies: {  }
+name: images_1440_x_900
+label: 'Images 1440 x 900'
+effects:
+  71605cbb-20a2-4aff-b2da-77ce49b3e1e0:
+    uuid: 71605cbb-20a2-4aff-b2da-77ce49b3e1e0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 900
+      anchor: center-center

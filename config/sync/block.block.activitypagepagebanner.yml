@@ -1,0 +1,31 @@
+uuid: 0e4cacbd-1333-40c3-a870-ead25fa4f388
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:page_banner:0b0701a7-c1b7-4ec3-a04a-992f7ad239b7'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: activitypagepagebanner
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:0b0701a7-c1b7-4ec3-a04a-992f7ad239b7'
+settings:
+  id: 'block_content:0b0701a7-c1b7-4ec3-a04a-992f7ad239b7'
+  label: 'Activity page - Page banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /linh-vuc-hoat-dong
+    negate: false
+    context_mapping: {  }

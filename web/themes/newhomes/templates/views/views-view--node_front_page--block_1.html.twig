@@ -42,18 +42,26 @@
     {{ title_suffix }}
 
     <div class="container">
+        <div class="block_heaeder">
+            <h2 class="block-title">{{ 'Lĩnh vực hoạt động' | t }}</h2>
+            <a href="{{ url('<front>') }}/linh-vuc-hoat-dong" class="see-more">{{ 'Xem tất cả' | t }} <i class="fas fa-arrow-right"></i></a>
+        </div>
         <div class="swiper-container field_of_activity">
             <div class="swiper-wrapper">
                 {% for item in items %}
                 <div class="swiper-slide">
                     <div class="item bg-dark-blue">
                         <div class="img">
-                            <img src="{{ item.uri | image_style('images_792_x_882') }}" alt="{{ item.alt }}">
+                            <a href="{{ url('<front>') }}/linh-vuc-hoat-dong#activity_{{ item.number }}">
+                                <img src="{{ item.uri | image_style('images_792_x_882') }}" alt="{{ item.alt }}">
+                            </a>
                         </div>
                         <div class="inner">
                             <div class="info">
                                 <div class="nember">{{ item.number }}</div>
-                                <h3 class="node_title">{{ item.title }}</h3>
+                                <a href="{{ url('<front>') }}/linh-vuc-hoat-dong#activity_{{ item.number }}">
+                                    <h3 class="node_title">{{ item.title }}</h3>
+                                </a>
                             </div>
                             <div class="content_link">
                                 <a href="{{ url('<front>') }}/linh-vuc-hoat-dong#activity_{{ item.number }}" class="node_link">{{ 'Xem thêm' | t }}</a>

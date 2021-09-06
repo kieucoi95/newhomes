@@ -1,0 +1,8 @@
+uuid: 52963d6c-6f84-4e24-87ac-f9054ead0123
+langcode: vi
+status: true
+dependencies: {  }
+id: homepage_partner
+label: 'Homepage - Partner'
+revision: 0
+description: ''

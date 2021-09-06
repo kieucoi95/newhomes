@@ -87,6 +87,7 @@ function newhomes_preprocess_views_view(&$variables) {
             $nid = $result->_entity->nid->value;
             $node = Node::load($nid);
             $trans = $node->getTranslation($langCode);
+
             // TITLE
             if (!empty($result->_entity->title)) {
                 if ($node->hasTranslation($langCode)) {
@@ -117,6 +118,59 @@ function newhomes_preprocess_views_view(&$variables) {
                 'number' => $number
             ];
 
+        }
+    }
+
+    if ($name == 'page_1' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $uri = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_image[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // body
+            if (!empty($result->_entity->body)) {
+                $nid = $result->_entity->nid->value;
+                $node = Node::load($nid);
+                
+                $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+                $trans = $node->getTranslation($langCode);
+                $body = $trans->body->value;
+                // $summary = $result->_entity->body->summary;
+            }
+
+            // Number
+            if (!empty($result->_entity->field_number)) {
+                $number = $trans->field_number->value;
+            }
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'uri' => $uri,
+                'title' => $title,
+                'number' => $number,
+                'body' => $body
+            ];
         }
     }
 }

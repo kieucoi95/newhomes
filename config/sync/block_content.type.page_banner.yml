@@ -1,0 +1,8 @@
+uuid: ceb2341e-a0f3-42f4-9dac-4b9c14ac099f
+langcode: vi
+status: true
+dependencies: {  }
+id: page_banner
+label: 'Page banner'
+revision: 0
+description: ''

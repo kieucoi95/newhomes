@@ -1,0 +1,11 @@
+uuid: b6262f29-383f-4daf-af74-0af49c3fa0ed
+langcode: vi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chuyen_muc_du_an
+id: taxonomy_term.chuyen_muc_du_an
+target_entity_type_id: taxonomy_term
+target_bundle: chuyen_muc_du_an
+default_langcode: site_default
+language_alterable: false

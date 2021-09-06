@@ -1,0 +1,18 @@
+uuid: d6eabd6e-c7ff-4a29-9489-6990fcec0327
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.du_an
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.du_an
+target_entity_type_id: node
+target_bundle: du_an
+default_langcode: site_default
+language_alterable: true

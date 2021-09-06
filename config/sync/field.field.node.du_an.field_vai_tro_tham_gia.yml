@@ -1,0 +1,19 @@
+uuid: c24087c1-9954-4fc6-9544-07278f564d40
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vai_tro_tham_gia
+    - node.type.du_an
+id: node.du_an.field_vai_tro_tham_gia
+field_name: field_vai_tro_tham_gia
+entity_type: node
+bundle: du_an
+label: 'Vai trò tham gia'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

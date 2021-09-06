@@ -1,0 +1,19 @@
+uuid: cde87db4-292a-4d41-be3c-b81d50a67f1f
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chu_dau_tu
+    - node.type.du_an
+id: node.du_an.field_chu_dau_tu
+field_name: field_chu_dau_tu
+entity_type: node
+bundle: du_an
+label: 'Chủ đầu tư'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

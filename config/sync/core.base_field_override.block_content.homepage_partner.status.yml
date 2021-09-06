@@ -1,0 +1,22 @@
+uuid: 211d55e5-7dd1-4761-beaf-80d85481944e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_partner
+id: block_content.homepage_partner.status
+field_name: status
+entity_type: block_content
+bundle: homepage_partner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -6,14 +6,7 @@ dependencies:
     - block_content.type.homepage_partner
     - field.storage.block_content.field_images
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: block_content.homepage_partner.field_images
 field_name: field_images
 entity_type: block_content
@@ -21,7 +14,7 @@ bundle: homepage_partner
 label: 'Công ty thành viên'
 description: 'Image 200 x 200'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

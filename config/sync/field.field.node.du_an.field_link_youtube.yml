@@ -1,0 +1,21 @@
+uuid: 51217aa0-1bdd-4d3b-90de-9996948b4939
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_youtube
+    - node.type.du_an
+  module:
+    - youtube
+id: node.du_an.field_link_youtube
+field_name: field_link_youtube
+entity_type: node
+bundle: du_an
+label: 'Link YouTube'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

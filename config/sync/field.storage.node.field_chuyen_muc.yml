@@ -1,0 +1,20 @@
+uuid: 31c1ff04-6446-4470-9a77-a848176f3c1a
+langcode: vi
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_chuyen_muc
+field_name: field_chuyen_muc
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

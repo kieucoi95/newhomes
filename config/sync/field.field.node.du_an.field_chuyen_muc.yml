@@ -1,0 +1,29 @@
+uuid: 94feaa50-e8a9-41b4-b557-aa70904c4737
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chuyen_muc
+    - node.type.du_an
+    - taxonomy.vocabulary.chuyen_muc_du_an
+id: node.du_an.field_chuyen_muc
+field_name: field_chuyen_muc
+entity_type: node
+bundle: du_an
+label: 'Chuyên mục'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      chuyen_muc_du_an: chuyen_muc_du_an
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

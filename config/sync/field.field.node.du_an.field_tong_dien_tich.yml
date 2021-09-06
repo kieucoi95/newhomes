@@ -1,0 +1,19 @@
+uuid: 9bce7a0f-3963-43b9-b2f7-1d39e51a155d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tong_dien_tich
+    - node.type.du_an
+id: node.du_an.field_tong_dien_tich
+field_name: field_tong_dien_tich
+entity_type: node
+bundle: du_an
+label: 'Tổng diện tích'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

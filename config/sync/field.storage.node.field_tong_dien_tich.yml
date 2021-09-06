@@ -1,0 +1,21 @@
+uuid: f1d22d99-6273-4146-82fd-a0b977a2a4f5
+langcode: vi
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tong_dien_tich
+field_name: field_tong_dien_tich
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

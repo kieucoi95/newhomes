@@ -1,0 +1,19 @@
+uuid: ac35e8d2-f5b8-40eb-8d84-1b814a575655
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tien_ich
+    - node.type.du_an
+id: node.du_an.field_tien_ich
+field_name: field_tien_ich
+entity_type: node
+bundle: du_an
+label: 'Tiện ích'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

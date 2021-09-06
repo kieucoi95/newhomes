@@ -1,0 +1,15 @@
+uuid: 95977be8-04b0-4463-ac4c-0fec7bb18e1a
+langcode: vi
+status: true
+dependencies: {  }
+name: images_150_x_150
+label: 'Images 150 x 150'
+effects:
+  1de2cd8c-80bd-4f86-bf61-600e1bf3894b:
+    uuid: 1de2cd8c-80bd-4f86-bf61-600e1bf3894b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

@@ -633,6 +633,7 @@ display:
         pager: false
         fields: false
         sorts: false
+        title: false
       filter_groups:
         operator: AND
         groups:
@@ -895,6 +896,18 @@ display:
           field_api_classes: false
           plugin_id: field
       sorts:
+        field_number_value:
+          id: field_number_value
+          table: node__field_number
+          field: field_number_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         created:
           id: created
           table: node_field_data
@@ -910,18 +923,7 @@ display:
           expose:
             label: ''
           granularity: second
-        field_number_value:
-          id: field_number_value
-          table: node__field_number
-          field: field_number_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
+      title: 'Lĩnh vực hoạt động'
     cache_metadata:
       max-age: -1
       contexts:

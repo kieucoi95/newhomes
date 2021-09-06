@@ -1,0 +1,35 @@
+uuid: 0877134d-f7d3-4d0a-bb30-73a4c8b6f86c
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_partner
+    - field.field.block_content.homepage_partner.field_images
+    - field.field.block_content.homepage_partner.field_images_partner
+  module:
+    - image
+id: block_content.homepage_partner.default
+targetEntityType: block_content
+bundle: homepage_partner
+mode: default
+content:
+  field_images:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_images_partner:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

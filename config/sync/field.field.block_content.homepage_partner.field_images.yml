@@ -1,0 +1,45 @@
+uuid: 49200973-fa6e-4913-8af1-a756d220335e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_partner
+    - field.storage.block_content.field_images
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: block_content.homepage_partner.field_images
+field_name: field_images
+entity_type: block_content
+bundle: homepage_partner
+label: 'Công ty thành viên'
+description: 'Image 200 x 200'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

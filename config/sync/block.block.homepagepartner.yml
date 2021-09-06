@@ -1,0 +1,31 @@
+uuid: 05524ab6-596f-4833-bc95-dd44934fc5e6
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_partner:6a7f3544-8958-450f-b599-b6d50c80633d'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: homepagepartner
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:6a7f3544-8958-450f-b599-b6d50c80633d'
+settings:
+  id: 'block_content:6a7f3544-8958-450f-b599-b6d50c80633d'
+  label: 'Homepage - Partner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

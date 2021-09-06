@@ -31,3 +31,8 @@ front_page:
       css/front_page.css: {}
   js:
     js/front_page.js: {}
+
+field_of_activity:
+  css:
+    theme:
+      css/field_of_activity.css: {}

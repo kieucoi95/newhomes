@@ -1,0 +1,62 @@
+<div class="container">
+    <div id="field_list">
+        {% for item in items %}
+        <div class="field_item" id="activity_{{ item.number }}">
+            {% if loop.index is odd %}
+            <div class="row item-odd">
+                <div class="col-lg-6">
+                    <div class="info">
+                        <div class="number">{{ item.number }}</div>
+                        <h2 class="node_title" data-toggle="modal" data-target="#field-{{ item.number }}">{{ item.title }}</h2>
+                        <div class="desc">{{ item.body | raw }}</div>
+                        <button class="view-detail" data-toggle="modal" data-target="#field-{{ item.number }}">{{ 'Xem thêm' | t }}</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img" data-toggle="modal" data-target="#field-{{ item.number }}">
+                        <img src="{{ item.uri | image_style('images_1440_x_900') }}" alt="{{ item.alt }}">
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="row item-even">
+                <div class="col-lg-6">
+                    <div class="img" data-toggle="modal" data-target="#field-{{ item.number }}">
+                        <img src="{{ item.uri | image_style('images_1440_x_900') }}" alt="{{ item.alt }}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info">
+                        <div class="number">{{ item.number }}</div>
+                        <h2 class="node_title" data-toggle="modal" data-target="#field-{{ item.number }}">{{ item.title }}</h2>
+                        <div class="desc">{{ item.body | raw }}</div>
+                        <button class="view-detail" data-toggle="modal" data-target="#field-{{ item.number }}">{{ 'Xem thêm' | t }}</button>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {# Modal #}
+            <div class="modal fade" id="field-{{ item.number }}" tabindex="-1" aria-labelledby="field-{{ item.number }}-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body overflow-hidden p-0 text-dark">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="invest-item" style="background-image:url({{ item.uri | image_style('images_1440_x_900') }});"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7 mx-auto my-4">
+                                        <h3 class="node_title">{{ item.title }}</h3>
+                                        <div class="member-content">{{ item.body | raw }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

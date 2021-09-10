@@ -25,6 +25,11 @@ swiper:
   js:
     libraries/swiper/swiper-bundle.js: {}
 
+ihover:
+  css:
+    theme:
+      css/ihover.css: {}
+
 front_page:
   css:
     theme:

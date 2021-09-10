@@ -12,6 +12,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\media\Entity\Media;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -172,6 +173,100 @@ function newhomes_preprocess_views_view(&$variables) {
                 'body' => $body
             ];
         }
+    }
+
+    if ($name == 'page_2' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $uri = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_image[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // Link
+            $link = Url::fromRoute('entity.node.canonical', ['node' => $nid])->toString();
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'uri' => $uri,
+                'title' => $title,
+                'link' => $link
+            ];
+        }
+    }
+    if ($name == 'block_2' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $uri = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_image[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // Link
+            $link = Url::fromRoute('entity.node.canonical', ['node' => $nid])->toString();
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'uri' => $uri,
+                'title' => $title,
+                'link' => $link
+            ];
+        }
+    }
+
+    if ($name == 'block_1' && $id == 'taxonomy_functions') {
+        $variables['items'] = [];
+        foreach ($view->result as $key => $result){
+            $tid = $result->_entity->tid->value;
+            $taxonomy_term = \Drupal\taxonomy\Entity\Term::load($tid);
+            $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+            $taxonomy_term_trans = \Drupal::service('entity.repository')->getTranslationFromContext($taxonomy_term, $langcode);
+            $title = $taxonomy_term_trans->get('name')->value;
+
+            $variables['items'][] = [
+                'tid' => $tid,
+                'name' => $title
+            ];
+        }
+
     }
 }
 

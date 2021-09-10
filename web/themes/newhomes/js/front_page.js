@@ -53,6 +53,24 @@
                 spaceBetween: 30,
             });
 
+            // Project
+            var project = new Swiper(".project", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 3,
+                spaceBetween: 30,
+            });
+
             // subsidiaries
             var subsidiaries = new Swiper(".subsidiaries", {
                 navigation: {

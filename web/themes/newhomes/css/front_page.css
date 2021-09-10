@@ -196,3 +196,16 @@
 #partner-tab a:not(:last-child) {
     margin-right: 30px;
 }
+
+#project {
+    padding: 3rem 0;
+}
+
+#project .ih-item {
+    width: 100%;
+    height: auto;
+}
+
+#project .node_title {
+    background: rgba(0, 0, 0, 0.466);
+}

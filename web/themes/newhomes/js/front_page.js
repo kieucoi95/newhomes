@@ -49,8 +49,20 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 30,
+                breakpoints: {
+                    // when window width is >= 480px
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }
             });
 
             // Project
@@ -67,8 +79,20 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 30,
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }
             });
 
             // subsidiaries
@@ -85,10 +109,25 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 6,
-                spaceBetween: 30,
-                autoHeight:true, 
-                autoWidth:true, 
+                slidesPerView: 3,
+                spaceBetween: 15,
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 6,
+                        spaceBetween: 30
+                    }
+                }
             });
 
             // partner
@@ -105,15 +144,30 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 6,
-                spaceBetween: 30,
-                autoHeight:true, 
-                autoWidth:true, 
+                slidesPerView: 3,
+                spaceBetween: 15,
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 6,
+                        spaceBetween: 30
+                    }
+                }
             });
         }
         
         if ($('.path-gioi-thieu').length) {
-            //about us
+            // about us
             var about_us = new Swiper(".about-us-slide", {
                 navigation: {
                     nextEl: ".swiper-button-next",
@@ -131,6 +185,38 @@
                 effect: 'fade'
             });
 
+            // mission
+            var mission = new Swiper(".mission", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 2
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        allowTouchMove: false,
+                        autoplay: false,
+                        pagination: false,
+                        navigation: false
+                    }
+                }
+            });
+
             // partner
             var partner = new Swiper(".partner-slide", {
                 navigation: {
@@ -145,10 +231,25 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 6,
-                spaceBetween: 30,
-                autoHeight:true, 
-                autoWidth:true, 
+                slidesPerView: 3,
+                spaceBetween: 15,
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 6,
+                        spaceBetween: 30
+                    }
+                }
             });
 
             // Company
@@ -165,8 +266,15 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
+                breakpoints: {
+                    // when window width is >= 640px
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    }
+                }
             });
         }
 

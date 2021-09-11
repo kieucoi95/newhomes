@@ -64,6 +64,31 @@ body .swiper-button-next::after {
     font-size: 14px;
     line-height: 20px;
     white-space: break-spaces;
+    overflow: auto;
+}
+
+.path-frontpage #about-us .col-lg-6:first-child {
+    margin-bottom: 30px;
+}
+
+/* width */
+#about-us .desc::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+#about-us .desc::-webkit-scrollbar-track {
+background: #00000094; 
+}
+
+/* Handle */
+#about-us .desc::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+#about-us .desc::-webkit-scrollbar-thumb:hover {
+background: var(--main-color); 
 }
 
 #about-us .btn-default {
@@ -248,6 +273,8 @@ body .swiper-button-next::after {
     font-size: 14px;
     color: #fff;
     white-space: break-spaces;
+    max-height: 250px;
+    overflow: auto;
 }
 
 #mission .info::before {
@@ -270,9 +297,14 @@ body .swiper-button-next::after {
     padding: 3rem 0;
 }
 
+#company .swiper-slide {
+    height: auto;
+}
+
 #company .item {
     border: 1px solid var(--main-color);
     padding: 10px;
+    height: 100%;
 }
 
 #company .item .col-md-6:first-child {
@@ -296,12 +328,48 @@ body .swiper-button-next::after {
     cursor: pointer;
 }
 
+#company .swiper-pagination {
+    position: unset;
+    margin-top: 15px;
+}
+
 #company .item .img img {
     cursor: pointer;
 }
 
+#company .invest-item {
+    padding-top: 295px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#company .modal-content {
+    overflow: hidden;
+}
+
+#company .member-content {
+    font-size: 14px;
+}
+
+#company h3.node_title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+#company .close {
+    margin: 5px 10px;
+    outline: none;
+    box-shadow: none;
+}
+
 @media (min-width: 576px) {
     .path-gioi-thieu #about-us .desc {
+        max-height: 250px;
+    }
+
+    .path-frontpage #about-us .desc {
         max-height: 250px;
     }
 }
@@ -311,16 +379,28 @@ body .swiper-button-next::after {
         max-height: 240px;
         margin-bottom: 0;
     }
+
+    .path-frontpage #about-us .desc {
+        max-height: 160px;
+    }
+
+    .path-frontpage #about-us .col-lg-6:first-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 1200px) {
     .path-gioi-thieu #about-us .desc {
         max-height: 300px;
     }
+
+    .path-frontpage #about-us .desc {
+        max-height: 220px;
+    }
 }
 
 @media (min-width: 1400px) {
-    .path-gioi-thieu #about-us .desc {
-
+    .path-frontpage #about-us .desc {
+        max-height: 220px;
     }
 }

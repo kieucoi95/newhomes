@@ -1,0 +1,86 @@
+{#
+/**
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A css-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   Javascript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="container">
+    <h2 class="block-title">{{ 'Công ty thành viên' | t }}</h2>
+    
+    <div class="swiper-container company_member">
+        <div class="swiper-wrapper">
+            {% for item in items %}
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="logo">
+                                <img src="{{ item.logo | image_style('images_150_x_150') }}" alt="{{ item.alt }}" data-toggle="modal" data-target="#company-{{ loop.index }}">
+                            </div>
+                            <h3 class="title" data-toggle="modal" data-target="#company-{{ loop.index }}">{{ item.title }}</h3>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img src="{{ item.img | image_style('images_293_x_225') }}" alt="{{ item.alt_img }}" data-toggle="modal" data-target="#company-{{ loop.index }}" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+{# Modal #}
+{% for item in items %}
+<div class="modal fade" id="company-{{ loop.index }}" tabindex="-1" aria-labelledby="company-{{ loop.index }}-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-body overflow-hidden p-0 text-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="invest-item" style="background-image:url({{ item.uri | image_style('images_1440_x_900') }});"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 mx-auto my-4">
+                            <h3 class="node_title">{{ item.title }}</h3>
+                            <div class="member-content">{{ item.body | raw }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,8 @@
+uuid: 80727078-5bb8-4fb5-8426-5a3ff38160a5
+langcode: vi
+status: true
+dependencies: {  }
+id: gioi_thieu_cong_ty_thanh_vien
+label: 'Giới thiệu - Công ty thành viên'
+revision: 0
+description: ''

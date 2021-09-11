@@ -1,0 +1,31 @@
+uuid: f5b661af-b426-45e1-89d5-2eb444e86ac1
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:page_banner:8e6523b6-6b09-42da-a829-440867383d0f'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: gioithieupagebanner
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:8e6523b6-6b09-42da-a829-440867383d0f'
+settings:
+  id: 'block_content:8e6523b6-6b09-42da-a829-440867383d0f'
+  label: 'Giới thiệu - Page banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /gioi-thieu
+    negate: false
+    context_mapping: {  }

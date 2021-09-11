@@ -1,0 +1,31 @@
+uuid: 475389ec-ba03-4832-a789-5515ef3f1b1c
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_gioi_thieu:64dc62f3-f266-4287-bdb1-611ead3843a6'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: gioithieuvechungtoi
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:64dc62f3-f266-4287-bdb1-611ead3843a6'
+settings:
+  id: 'block_content:64dc62f3-f266-4287-bdb1-611ead3843a6'
+  label: 'Giới thiệu - Về chúng tôi'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /gioi-thieu
+    negate: false
+    context_mapping: {  }

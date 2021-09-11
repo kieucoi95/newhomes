@@ -1,0 +1,11 @@
+uuid: 0643d2c0-3a13-4d65-9d3b-3f592aae4384
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.doi_tac
+id: node.doi_tac
+target_entity_type_id: node
+target_bundle: doi_tac
+default_langcode: site_default
+language_alterable: false

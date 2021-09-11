@@ -1,0 +1,31 @@
+uuid: f3f8c56e-a9a8-480b-bbf4-78ae5d5bacc2
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_tam_nhin_su_menh
+    - field.storage.block_content.field_tam_nhin
+    - paragraphs.paragraphs_type.gioi_thieu_tam_nhin_su_menh
+  module:
+    - entity_reference_revisions
+id: block_content.gioi_thieu_tam_nhin_su_menh.field_tam_nhin
+field_name: field_tam_nhin
+entity_type: block_content
+bundle: gioi_thieu_tam_nhin_su_menh
+label: 'Tầm nhìn - Sứ mệnh - Giá trị cốt lõi'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gioi_thieu_tam_nhin_su_menh: gioi_thieu_tam_nhin_su_menh
+    target_bundles_drag_drop:
+      gioi_thieu_tam_nhin_su_menh:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

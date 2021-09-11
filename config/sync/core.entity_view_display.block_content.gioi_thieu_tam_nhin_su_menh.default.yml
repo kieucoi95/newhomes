@@ -1,0 +1,25 @@
+uuid: 4cf8d899-aeca-4780-aab7-4bb244e03b93
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_tam_nhin_su_menh
+    - field.field.block_content.gioi_thieu_tam_nhin_su_menh.field_tam_nhin
+  module:
+    - entity_reference_revisions
+id: block_content.gioi_thieu_tam_nhin_su_menh.default
+targetEntityType: block_content
+bundle: gioi_thieu_tam_nhin_su_menh
+mode: default
+content:
+  field_tam_nhin:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

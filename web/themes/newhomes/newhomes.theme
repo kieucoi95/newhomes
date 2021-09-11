@@ -56,6 +56,24 @@ function newhomes_preprocess_block(&$variables) {
     if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
         $blockType = $content['#block_content']->bundle();
 
+        // About us vision, mission
+        if ($blockType === 'gioi_thieu_tam_nhin_su_menh') {
+            $variables['items'] = [];
+            foreach ($content['field_tam_nhin'] as $key => $value) {
+                if (is_numeric($key)) {
+                    $title = $value['#paragraph']->field_title->getValue()[0]['value'];
+                    $desc = $value['#paragraph']->field_description->getValue()[0]['value'];
+                    $img_id = $value['#paragraph']->field_image->getValue()[0]['target_id'];
+                    $img_id = File::load($img_id);
+                    $img_uri = $img_id->getFileUri();
+                    $variables['items'][] = [
+                    'title' => $title,
+                    'desc' => $desc,
+                    'img' => $img_uri
+                    ];
+                }
+            }
+        }
     }
 }
 
@@ -213,6 +231,7 @@ function newhomes_preprocess_views_view(&$variables) {
             ];
         }
     }
+
     if ($name == 'block_2' && $id == 'node_front_page') {
         $variables['items'] = [];
         $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
@@ -252,6 +271,156 @@ function newhomes_preprocess_views_view(&$variables) {
         }
     }
 
+    if ($name == 'block_3' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_logo)) {
+                $uri = \Drupal\file\Entity\File::load($result->_entity->field_logo[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_logo[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // Link
+            if (!empty($result->_entity->field_link)) {
+                $link = $trans->field_link->value;
+            }
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'uri' => $uri,
+                'title' => $title,
+                'link' => $link
+            ];
+        }
+    }
+
+    
+    if ($name == 'block_4' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // Logo
+            if (!empty($result->_entity->field_logo)) {
+                $logo = \Drupal\file\Entity\File::load($result->_entity->field_logo[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_logo[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $img = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_image[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // Link
+            if (!empty($result->_entity->field_number)) {
+                $number = $trans->field_link->value;
+            }
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'logo' => $logo,
+                'img' => $img,
+                'title' => $title,
+                'link' => $link
+            ];
+        }
+    }
+
+    if ($name == 'block_5' && $id == 'node_front_page') {
+        $variables['items'] = [];
+        $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+        foreach ($view->result as $key => $result){
+            $nid = $result->_entity->nid->value;
+            $node = Node::load($nid);
+            $trans = $node->getTranslation($langCode);
+
+            // TITLE
+            if (!empty($result->_entity->title)) {
+                if ($node->hasTranslation($langCode)) {
+                    $title = $trans->getTitle();
+                }
+            } else {
+                $title = '';
+            }
+
+            // Logo
+            if (!empty($result->_entity->field_logo)) {
+                $logo = \Drupal\file\Entity\File::load($result->_entity->field_logo[0]->target_id)->uri->value;
+                $alt = $result->_entity->field_logo[0]->alt;
+            } else {
+                $uri = '';
+                $alt = '';
+            }
+
+            // IMG
+            if (!empty($result->_entity->field_image)) {
+                $img = \Drupal\file\Entity\File::load($result->_entity->field_image[0]->target_id)->uri->value;
+                $alt_img = $result->_entity->field_image[0]->alt;
+            } else {
+                $img = '';
+                $alt_img = '';
+            }
+
+            // body
+            if (!empty($result->_entity->body)) {
+                $nid = $result->_entity->nid->value;
+                $node = Node::load($nid);
+                
+                $langCode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+                $trans = $node->getTranslation($langCode);
+                $body = $trans->body->value;
+                // $summary = $result->_entity->body->summary;
+            }
+
+            $variables['items'][] = [
+                'alt' => $alt,
+                'logo' => $logo,
+                'img' => $img,
+                'alt_img' => $alt_img,
+                'title' => $title,
+                'body' => $body
+            ];
+        }
+    }
     if ($name == 'block_1' && $id == 'taxonomy_functions') {
         $variables['items'] = [];
         foreach ($view->result as $key => $result){

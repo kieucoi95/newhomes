@@ -112,6 +112,63 @@
             });
         }
         
+        if ($('.path-gioi-thieu').length) {
+            //about us
+            var about_us = new Swiper(".about-us-slide", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                effect: 'fade'
+            });
+
+            // partner
+            var partner = new Swiper(".partner-slide", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 6,
+                spaceBetween: 30,
+                autoHeight:true, 
+                autoWidth:true, 
+            });
+
+            // Company
+            var partner = new Swiper(".company_member", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 2,
+                spaceBetween: 30,
+            });
+        }
 
     });
 })( jQuery );

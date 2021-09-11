@@ -1,0 +1,19 @@
+uuid: 619af497-c4f8-4ca9-b4cb-3de31f4c3e45
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.gioi_thieu_tam_nhin_su_menh
+id: paragraph.gioi_thieu_tam_nhin_su_menh.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: gioi_thieu_tam_nhin_su_menh
+label: 'Mô tả'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

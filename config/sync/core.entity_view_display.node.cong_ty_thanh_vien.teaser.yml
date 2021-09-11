@@ -1,0 +1,27 @@
+uuid: b5138540-fcfa-4d29-b463-9e281d5c8dba
+langcode: vi
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cong_ty_thanh_vien.body
+    - field.field.node.cong_ty_thanh_vien.field_image
+    - field.field.node.cong_ty_thanh_vien.field_logo
+    - node.type.cong_ty_thanh_vien
+  module:
+    - user
+id: node.cong_ty_thanh_vien.teaser
+targetEntityType: node
+bundle: cong_ty_thanh_vien
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_image: true
+  field_logo: true
+  langcode: true

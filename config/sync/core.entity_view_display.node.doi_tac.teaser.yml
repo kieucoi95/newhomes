@@ -1,0 +1,25 @@
+uuid: 73a37d58-ff44-4eb4-9dff-6e64599821e4
+langcode: vi
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.doi_tac.field_link
+    - field.field.node.doi_tac.field_logo
+    - node.type.doi_tac
+  module:
+    - user
+id: node.doi_tac.teaser
+targetEntityType: node
+bundle: doi_tac
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link: true
+  field_logo: true
+  langcode: true

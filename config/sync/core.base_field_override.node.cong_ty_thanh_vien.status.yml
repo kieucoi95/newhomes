@@ -1,0 +1,22 @@
+uuid: c4bf75dc-dd1c-480b-b187-8c2e0b878830
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.cong_ty_thanh_vien
+id: node.cong_ty_thanh_vien.status
+field_name: status
+entity_type: node
+bundle: cong_ty_thanh_vien
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,31 @@
+uuid: 4297ef40-70fe-4d79-9c53-c5a0d2664bdf
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:gioi_thieu_tam_nhin_su_menh:1f3cd7e8-3f76-45a6-9d46-3479619afdff'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: gioithieutamnhinsumenh
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1f3cd7e8-3f76-45a6-9d46-3479619afdff'
+settings:
+  id: 'block_content:1f3cd7e8-3f76-45a6-9d46-3479619afdff'
+  label: 'Giới thiệu - Tầm nhìn sứ mệnh'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /gioi-thieu
+    negate: false
+    context_mapping: {  }

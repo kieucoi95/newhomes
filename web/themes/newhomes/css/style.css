@@ -55,6 +55,10 @@ h1.page_title {
     background: var(--main-color);
 }
 
+#page-banner img {
+    width: 100%;
+}
+
 @media (min-width: 576px) {
     body .modal-dialog { 
         max-width: 500px;

@@ -1,0 +1,11 @@
+uuid: 7e22cebc-b920-4bab-8f0e-5d2a02f09e58
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_cong_ty_thanh_vien
+id: block_content.gioi_thieu_cong_ty_thanh_vien
+target_entity_type_id: block_content
+target_bundle: gioi_thieu_cong_ty_thanh_vien
+default_langcode: site_default
+language_alterable: false

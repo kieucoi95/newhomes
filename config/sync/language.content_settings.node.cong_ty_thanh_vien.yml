@@ -1,0 +1,11 @@
+uuid: ad3b0307-5841-4b3b-b796-540378e28fab
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.cong_ty_thanh_vien
+id: node.cong_ty_thanh_vien
+target_entity_type_id: node
+target_bundle: cong_ty_thanh_vien
+default_langcode: site_default
+language_alterable: false

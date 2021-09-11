@@ -1,0 +1,11 @@
+uuid: e6a324dd-e053-4284-9e3b-53c9436def2d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_tam_nhin_su_menh
+id: block_content.gioi_thieu_tam_nhin_su_menh
+target_entity_type_id: block_content
+target_bundle: gioi_thieu_tam_nhin_su_menh
+default_langcode: site_default
+language_alterable: false

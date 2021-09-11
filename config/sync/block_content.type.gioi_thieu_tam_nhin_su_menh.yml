@@ -1,0 +1,8 @@
+uuid: 8872721a-8ee2-4113-962a-d96ed2d44dcb
+langcode: vi
+status: true
+dependencies: {  }
+id: gioi_thieu_tam_nhin_su_menh
+label: 'Giới thiệu - Tầm nhìn sứ mệnh'
+revision: 0
+description: ''

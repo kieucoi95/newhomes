@@ -1,0 +1,42 @@
+uuid: ad845b90-03ed-45fd-9329-78202b102a52
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_cong_ty_thanh_vien
+    - field.field.block_content.gioi_thieu_cong_ty_thanh_vien.field_cong_ty_thanh_vien
+  module:
+    - paragraphs
+id: block_content.gioi_thieu_cong_ty_thanh_vien.default
+targetEntityType: block_content
+bundle: gioi_thieu_cong_ty_thanh_vien
+mode: default
+content:
+  field_cong_ty_thanh_vien:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

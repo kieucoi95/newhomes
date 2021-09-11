@@ -1,0 +1,19 @@
+uuid: e3f83997-9383-4037-9136-6d4631be5363
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.gioi_thieu_tam_nhin_su_menh
+id: paragraph.gioi_thieu_tam_nhin_su_menh.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: gioi_thieu_tam_nhin_su_menh
+label: 'Tiêu đề'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

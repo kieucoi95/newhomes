@@ -45,46 +45,39 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('newhomes/swiper') }}
+{{ attach_library('newhomes/fontawesome') }}
 {{ attach_library('newhomes/front_page') }}
+{{ attach_library('newhomes/swiper') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
-<main role="main">
-  {# Slide banner #}
-  <div id="home-slide">
-    {{ drupal_entity('block', 'homepageslidebanner') }}
-  </div>
-  {# about us #}
-  <div id="about-us" class="bg-dark-blue">
-    {{ drupal_entity('block', 'homepagegioithieu') }}
-  </div>
-  {# field of activity #}
-  <div id="field_of_activity" class="bg-dark">
-    {{ drupal_view('node_front_page', 'block_1') }}
-  </div>
-  {# project #}
-  <div id="project" class="bg-dark-blue">
-    {{ drupal_view('node_front_page', 'block_2') }}
-  </div>
-  {# partner #}
-  <div id="partner" class="bg-dark-blue">
-    {# {{ drupal_entity('block', 'homepagepartner') }} #}
-    <div class="container">
-      {# Tab #}
-      <div class="nav" id="partner-tab" role="tablist">
-          <a class="active" id="subsidiaries-tab" data-toggle="tab" href="#subsidiaries" role="tab" aria-controls="subsidiaries" aria-selected="true">{{ 'Công ty thành viên' | t }}</a>
-          <a class="" id="nav-partner-tab" data-toggle="tab" href="#nav-partner" role="tab" aria-controls="nav-partner" aria-selected="false">{{ 'Đối tác' | t }}</a>
-      </div>
-      <div class="tab-content-partner" id="partner-tabContent">
-          <div class="tab-pane fade show active" id="subsidiaries" role="tabpanel" aria-labelledby="subsidiaries-tab">
-              {{ drupal_view('node_front_page', 'block_4') }}
-          </div>
-          <div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab">
-              {{ drupal_view('node_front_page', 'block_3') }}
-          </div>
-      </div>
+<main role="main" class="bg-dark-blue">
+    {# Page banner #}
+    <div id="page-banner">
+        {{ drupal_entity('block', 'gioithieupagebanner') }}
     </div>
-  </div>
+
+    {# About us #}
+    <div id="about-us">
+        {{ drupal_entity('block', 'gioithieuvechungtoi') }}
+    </div>
+    
+    {# Vision, mission #}
+    <div id="mission">
+        {{ drupal_entity('block', 'gioithieutamnhinsumenh') }}
+    </div>
+
+    {# Company #}
+    <div id="company">
+        {{ drupal_view('node_front_page', 'block_5') }}
+    </div>
+
+    {# Partner #}
+    <div id="partner">
+        <div class="container">
+        <h2 class="block-title">{{ 'Đối tác' }}</h2>
+        {{ drupal_view('node_front_page', 'block_3') }}
+        </div>
+    </div>
+
+
 </main>
 {% include directory ~ '/templates/includes/footer.html.twig' %}
-
-

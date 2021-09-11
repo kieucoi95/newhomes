@@ -1,0 +1,42 @@
+uuid: 7cb3cdbe-a5b9-43e9-bce9-6d61e5e10558
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.gioi_thieu_tam_nhin_su_menh
+    - field.field.block_content.gioi_thieu_tam_nhin_su_menh.field_tam_nhin
+  module:
+    - paragraphs
+id: block_content.gioi_thieu_tam_nhin_su_menh.default
+targetEntityType: block_content
+bundle: gioi_thieu_tam_nhin_su_menh
+mode: default
+content:
+  field_tam_nhin:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

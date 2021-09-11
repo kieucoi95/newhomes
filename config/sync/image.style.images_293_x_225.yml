@@ -1,0 +1,15 @@
+uuid: 95f9c26e-f1f3-4bb8-9091-410cf9eb21fe
+langcode: vi
+status: true
+dependencies: {  }
+name: images_293_x_225
+label: 'Images 293 x 225'
+effects:
+  60ce91e6-622e-47d1-9fc3-4ce4547658b4:
+    uuid: 60ce91e6-622e-47d1-9fc3-4ce4547658b4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 293
+      height: 225
+      anchor: center-center

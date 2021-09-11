@@ -1,5 +1,5 @@
-.path-frontpage .swiper-container .swiper-button-prev, 
-.path-frontpage .swiper-container .swiper-button-next {
+body .swiper-container .swiper-button-prev, 
+body .swiper-container .swiper-button-next {
     height: 40px;
     width: 40px;
     display: flex;
@@ -9,7 +9,7 @@
     opacity: 0;
 }
 
-.path-frontpage .swiper-container span.swiper-pagination-bullet {
+body .swiper-container span.swiper-pagination-bullet {
     background: #000;
     border: 2px solid var(--main-color);
     opacity: 1;
@@ -17,32 +17,32 @@
     height: 12px;
 }
 
-.path-frontpage #field_of_activity .swiper-pagination,
-.path-frontpage #partner .swiper-pagination {
+body #field_of_activity .swiper-pagination,
+body #partner .swiper-pagination {
     position: unset;
     margin-top: 1rem;
 }
 
-.path-frontpage .swiper-container span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+body .swiper-container span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: var(--main-color);
 }
 
-.path-frontpage .swiper-button-prev {
+body .swiper-button-prev {
     transform: translateX(-15px);
 }
 
-.path-frontpage .swiper-button-next {
+body .swiper-button-next {
     transform: translateX(15px);
 }
 
-.path-frontpage .swiper-container:hover .swiper-button-prev, 
-.path-frontpage .swiper-container:hover .swiper-button-next {
+body .swiper-container:hover .swiper-button-prev, 
+body .swiper-container:hover .swiper-button-next {
     transform: translateX(0);
     opacity: 1;
 }
 
-.path-frontpage .swiper-button-prev::after, 
-.path-frontpage .swiper-button-next::after {
+body .swiper-button-prev::after, 
+body .swiper-button-next::after {
     font-size: 18px;
     font-weight: 600;
     color: yellow;
@@ -208,4 +208,119 @@
 
 #project .node_title {
     background: rgba(0, 0, 0, 0.466);
+}
+
+.path-gioi-thieu #about-us .desc {
+    overflow: auto;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#mission .item {
+    position: relative;
+}
+
+#mission .info {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: #00000094;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mission .info .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+#mission .info .desc {
+    font-size: 14px;
+    color: #fff;
+    white-space: break-spaces;
+}
+
+#mission .info::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border: 1px solid #fff;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+.path-gioi-thieu #about-us .btn-default {
+    display: none;
+}
+
+#company {
+    padding: 3rem 0;
+}
+
+#company .item {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+}
+
+#company .item .col-md-6:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#company .item .logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+#company h3.title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#company .item .img img {
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .path-gioi-thieu #about-us .desc {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .path-gioi-thieu #about-us .desc {
+        max-height: 240px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .path-gioi-thieu #about-us .desc {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .path-gioi-thieu #about-us .desc {
+
+    }
 }

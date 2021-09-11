@@ -1,0 +1,50 @@
+uuid: 898258ac-abad-43ff-b659-ace4ba9d2065
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.node.cong_ty_thanh_vien.body
+    - field.field.node.cong_ty_thanh_vien.field_image
+    - field.field.node.cong_ty_thanh_vien.field_logo
+    - node.type.cong_ty_thanh_vien
+  module:
+    - image
+    - text
+    - user
+id: node.cong_ty_thanh_vien.default
+targetEntityType: node
+bundle: cong_ty_thanh_vien
+mode: default
+content:
+  body:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

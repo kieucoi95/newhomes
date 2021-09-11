@@ -3,13 +3,16 @@ global-styling:
     theme:
       libraries/bootstrap/css/bootstrap.min.css: {}
       css/style.css: {}
+      css/ht-style.css: {}
   js:
     libraries/bootstrap/js/bootstrap.min.js: {}
     js/script.js: {}
+    js/ht-script.js: {}
   dependencies:
     - core/drupal
     - core/drupalSettings
     - core/jquery
+    - core/jquery.once
 
 fontawesome:
   css:

@@ -35,6 +35,12 @@ class ParagraphsSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('show_unpublished'),
       '#description' => $this->t('Allow users with "View unpublished paragraphs" permission to see unpublished Paragraphs. Disable this if unpublished paragraphs should be hidden for all users, including super administrators.')
     ];
+	$form['allow_reference_changes'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow translated Paragraphs'),
+      '#default_value' => $config->get('allow_reference_changes'),
+      '#description' => $this->t('Allow reference changes for paragraphs.')
+    ];
 
     return parent::buildForm($form, $form_state);
   }
@@ -45,6 +51,7 @@ class ParagraphsSettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $config = $this->config('paragraphs.settings');
     $config->set('show_unpublished', $form_state->getValue('show_unpublished'));
+	$config->set('allow_reference_changes', $form_state->getValue('allow_reference_changes'));
     $config->save();
 
     parent::submitForm($form, $form_state);

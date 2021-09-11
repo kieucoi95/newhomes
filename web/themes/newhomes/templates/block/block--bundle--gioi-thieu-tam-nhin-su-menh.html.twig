@@ -31,20 +31,25 @@
     {{ title_prefix }}
     {{ title_suffix }}
     {% block content %}
-    <div class="row" style="margin: 0;">
-        {% for item in items %}
-        <div class="col-md-4" style="padding: 0;">
-            <div class="item">
-                <div class="img">
-                    <img src="{{ item.img | image_style('images_800_x_800') }}">
+    <div class="swiper-container mission">
+        <div class="swiper-wrapper">
+            {% for item in items %}
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="img">
+                        <img src="{{ item.img | image_style('images_800_x_800') }}">
+                    </div>
+                    <div class="info">
+                        <h3 class="title">{{ item.title }}</h3>
+                        <div class="desc">{{ item.desc }}</div>
+                    </div>
                 </div>
-                <div class="info">
-                    <h3 class="title">{{ item.title }}</h3>
-                    <div class="desc">{{ item.desc }}</div>
-                </div>
-            </div>
-        </div>    
-        {% endfor %}
+            </div>    
+            {% endfor %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
     {% endblock %}
 </div>

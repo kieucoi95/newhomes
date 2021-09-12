@@ -77,61 +77,68 @@
 {{ attach_library('newhomes/fontawesome') }}
 <article{{ attributes }}>
     <div class="container">
-            {{ title_prefix }}
-            {{ title_suffix }}
-            <div{{ content_attributes }}>
-                <h1 class="node_title">{{ node.label }}</h1>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="video_youtube">{{ content.field_link_youtube }}</div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="project_info">
-                            <div class="list_item">
-                                {{ content.field_vi_tri }}
-                                {{ content.field_loai_hinh_du_an }}
-                                {{ content.field_chu_dau_tu }}
-                                {{ content.field_tong_dien_tich }}
-                                {{ content.field_tien_ich }}
-                                {{ content.field_vai_tro_tham_gia }}
-                                {{ content.field_doi_tac }}
-                            </div>
-                        </div>
-                    </div>
+        {{ title_prefix }}
+        {{ title_suffix }}
+        <div{{ content_attributes }}>
+            <h1 class="node_title">{{ node.label }}</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="video_youtube">{{ content.field_link_youtube }}</div>
                 </div>
-                <div class="desc">
-                    <h2 class="title_field">{{ 'Mô tả dự án' | t }}</h2>
-                    {{ content.body }}
-                </div>
-                {# gallery  #}
-                <div id="gallery_project">
-                    <h2 class="gallery_title">{{ 'Hình ảnh dự án' | t }}</h2>
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container gallery_project">
-                        <div class="swiper-wrapper">
-                        {% for key, item in node.field_images %}
-                            {% if key matches '/^[-+]?[0-9]*\\.?[0-9]+$/' %}
-                            <div class="swiper-slide">
-                                <img src="{{ item.entity.uri.value | image_style('images_1920_x_810') }}" alt="{{ item.alt }}">
-                            </div>
-                            {% endif %}
-                        {% endfor %}
-                            
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                    <div thumbsSlider="" class="swiper-container gallery_project_thmub">
-                        <div class="swiper-wrapper">
-                            {% for key, item in node.field_images %}
-                                {% if key matches '/^[-+]?[0-9]*\\.?[0-9]+$/' %}
-                                <div class="swiper-slide">
-                                    <img src="{{ item.entity.uri.value | image_style('images_640_x_270') }}" alt="{{ item.alt }}">
-                                </div>
-                                {% endif %}
-                            {% endfor %}
+                <div class="col-lg-6">
+                    <div class="project_info">
+                        <div class="list_item">
+                            {{ content.field_vi_tri }}
+                            {{ content.field_loai_hinh_du_an }}
+                            {{ content.field_chu_dau_tu }}
+                            {{ content.field_tong_dien_tich }}
+                            {{ content.field_tien_ich }}
+                            {{ content.field_vai_tro_tham_gia }}
+                            {{ content.field_doi_tac }}
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="desc">
+                <h2 class="title_field">{{ 'Mô tả dự án' | t }}</h2>
+                {{ content.body }}
+            </div>
+            {# gallery  #}
+            <div id="gallery_project">
+                <h2 class="gallery_title">{{ 'Hình ảnh dự án' | t }}</h2>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container gallery_project">
+                    <div class="swiper-wrapper">
+                    {% for key, item in node.field_images %}
+                        {% if key matches '/^[-+]?[0-9]*\\.?[0-9]+$/' %}
+                        <div class="swiper-slide">
+                            <img src="{{ item.entity.uri.value | image_style('images_1920_x_810') }}" alt="{{ item.alt }}">
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper-container gallery_project_thmub">
+                    <div class="swiper-wrapper">
+                        {% for key, item in node.field_images %}
+                            {% if key matches '/^[-+]?[0-9]*\\.?[0-9]+$/' %}
+                            <div class="swiper-slide">
+                                <img src="{{ item.entity.uri.value | image_style('images_640_x_270') }}" alt="{{ item.alt }}">
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </article>
+{# Project other #}
+<div id="project_other" class="bg-dark">
+    <div class="container">
+        <h2 class="block-title">{{ 'Dự án khác' | t }}</h2>
+        {{ drupal_view('node_front_page', 'block_6', node.id, node.field_chuyen_muc[0].value['target_id'] ) }}
+    </div>
+</div>

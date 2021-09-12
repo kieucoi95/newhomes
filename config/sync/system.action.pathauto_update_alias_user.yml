@@ -1,0 +1,16 @@
+uuid: b5b5bd74-ebb1-486c-8e28-afc56f8eef24
+langcode: vi
+status: true
+dependencies:
+  enforced:
+    module:
+      - user
+  module:
+    - pathauto
+_core:
+  default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
+id: pathauto_update_alias_user
+label: 'Cập nhật đường dẫn URL ảo'
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

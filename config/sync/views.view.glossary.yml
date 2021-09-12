@@ -58,7 +58,7 @@ display:
           total_pages: 0
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Số mục trên một trang'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
@@ -76,7 +76,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: 'Tiêu đề'
           exclude: false
           alter:
             alter_text: false
@@ -123,7 +123,7 @@ display:
           id: name
           table: users_field_data
           field: name
-          label: Author
+          label: 'Tác giả'
           relationship: uid
           plugin_id: field
           type: user_name

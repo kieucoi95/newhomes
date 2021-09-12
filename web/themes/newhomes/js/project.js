@@ -4,9 +4,19 @@
         if ($('.page-node-type-du-an').length) {
             var gallery_project_thmub = new Swiper(".gallery_project_thmub", {
                 spaceBetween: 10,
-                slidesPerView: 4,
+                slidesPerView: 2,
                 freeMode: true,
                 watchSlidesProgress: true,
+                breakpoints: {
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 3
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 4,
+                    }
+                }
             });
             var gallery_project = new Swiper(".gallery_project", {
                 spaceBetween: 10,

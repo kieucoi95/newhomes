@@ -160,7 +160,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: Title
+          label: 'Tiêu đề'
           exclude: false
           alter:
             alter_text: false
@@ -183,7 +183,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Kiểu nội dung'
           exclude: false
           alter:
             alter_text: false
@@ -246,7 +246,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: Author
+          label: 'Tác giả'
           exclude: false
           alter:
             alter_text: false
@@ -311,7 +311,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: 'Thao tác'
           exclude: false
           alter:
             alter_text: false
@@ -368,7 +368,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: 'Tiêu đề'
             description: ''
             use_operator: false
             operator: title_op
@@ -410,7 +410,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: 'Kiểu nội dung'
             description: ''
             use_operator: false
             operator: type_op
@@ -501,7 +501,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: 'Ngôn ngữ'
             description: ''
             use_operator: false
             operator: langcode_op

@@ -1,0 +1,16 @@
+uuid: 26feae75-c0bd-463d-97d0-2e01d9ccad22
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_infomation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.footer_infomation
+target_entity_type_id: block_content
+target_bundle: footer_infomation
+default_langcode: site_default
+language_alterable: false

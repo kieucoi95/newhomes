@@ -1,0 +1,48 @@
+uuid: eec07b2a-cc5e-46d2-a59b-d2d38ca5f496
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_infomation
+    - field.field.block_content.footer_infomation.field_ht_addr
+    - field.field.block_content.footer_infomation.field_ht_email
+    - field.field.block_content.footer_infomation.field_ht_link
+    - field.field.block_content.footer_infomation.field_ht_phone
+id: block_content.footer_infomation.default
+targetEntityType: block_content
+bundle: footer_infomation
+mode: default
+content:
+  field_ht_addr:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_ht_email:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ht_link:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ht_phone:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

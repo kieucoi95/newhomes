@@ -1,0 +1,19 @@
+uuid: f81c9c43-85e4-4221-8c8b-46bd98451638
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_infomation
+    - field.storage.block_content.field_ht_email
+id: block_content.footer_infomation.field_ht_email
+field_name: field_ht_email
+entity_type: block_content
+bundle: footer_infomation
+label: Email
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

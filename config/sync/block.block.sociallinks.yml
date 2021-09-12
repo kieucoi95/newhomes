@@ -1,0 +1,25 @@
+uuid: 628eb0f1-80cd-46ea-ac95-93736341cdbe
+langcode: vi
+status: false
+dependencies:
+  content:
+    - 'block_content:hf_social_block:de9974b2-db56-451d-8176-96d1555df6e2'
+  module:
+    - block_content
+  theme:
+    - newhomes
+id: sociallinks
+theme: newhomes
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:de9974b2-db56-451d-8176-96d1555df6e2'
+settings:
+  id: 'block_content:de9974b2-db56-451d-8176-96d1555df6e2'
+  label: 'Social Links'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

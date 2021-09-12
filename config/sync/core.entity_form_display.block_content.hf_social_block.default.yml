@@ -1,0 +1,59 @@
+uuid: 0c04ad08-5118-41fc-858b-8b86f2b6f770
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+    - field.field.block_content.hf_social_block.field_ht_facebook
+    - field.field.block_content.hf_social_block.field_ht_linked_in
+    - field.field.block_content.hf_social_block.field_ht_youtube
+id: block_content.hf_social_block.default
+targetEntityType: block_content
+bundle: hf_social_block
+mode: default
+content:
+  field_ht_facebook:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ht_linked_in:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ht_youtube:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: dadf7616-d8cd-45ed-a5dc-7385376c793b
+langcode: vi
+status: false
+dependencies:
+  content:
+    - 'block_content:footer_infomation:b2c601d7-b38d-42f3-ad38-150ba3e1601e'
+  module:
+    - block_content
+  theme:
+    - newhomes
+id: footer_infomations
+theme: newhomes
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:b2c601d7-b38d-42f3-ad38-150ba3e1601e'
+settings:
+  id: 'block_content:b2c601d7-b38d-42f3-ad38-150ba3e1601e'
+  label: 'Footer infomations'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

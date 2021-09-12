@@ -1,0 +1,21 @@
+uuid: ace550f5-325f-4899-931d-c88a71f64d3e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+    - field.storage.block_content.field_ht_facebook
+id: block_content.hf_social_block.field_ht_facebook
+field_name: field_ht_facebook
+entity_type: block_content
+bundle: hf_social_block
+label: Facebook
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'https://www.facebook.com/'
+default_value_callback: ''
+settings: {  }
+field_type: string

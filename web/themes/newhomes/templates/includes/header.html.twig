@@ -1,40 +1,109 @@
 {{ attach_library('newhomes/fontawesome') }}
 <header>
-  {# Header fix top #}
-  <div class="header-fix">
+  {# Language block #}
+  <div style="display:none;">{{ drupal_entity("block", "language_switcher", check_access=false) }}</div>
+
+  {# Main Header - desktop #}
+  <div class="header-fix _header">
     <div class="container">
+      <div class="text-gold ht_tablet_show mb-btn" data-trigger="#navbar_main">
+          <svg class="bi bi-list" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+      </div>
       <div class="logo">
         <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo" height="50"></a>
       </div>
-      <div class="main-menu d-none d-lg-block">
+      <div class="main-menu ht_tablet_hide">
         {{ drupal_menu('main') }}
       </div>
-      <div class="btn-menu-mobile d-lg-none d-block">
-        <i class="fad fa-bars"></i>
+      <div class="right-header">
+        <div class="search-btn">
+          <a class="icon-search" style="">
+            <svg class="bi bi-search" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path>
+            </svg>
+          </a>
+          <a class="icon-close" style="display: none;">
+            <svg class="bi bi-x-circle" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path>
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="lang-box ht_tablet_hide">
+          <ul class="lang-nav">
+            <li class="active">
+              <a lang="vi"><img alt="VI" src="{{ urlf('img') }}themes/newhomes/images/vi.svg"></a>
+            </li>
+            <li>
+              <a lang="en"><img alt="EN" src="{{ urlf('img') }}themes/newhomes/images/en.svg"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search-box sb" style="display:none;">
+      <div class="container">
+        <input class="search-input" type="text" placeholder="{{ 'Nhập từ khóa tìm kiếm ...'|t }}" name="s">
+        <button class="s-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
-  {# Header #}
-  <div id="header">
-    <div class="container">
+
+  {# Main Header - mobile #}
+  <div class="mb-header ht_tablet_show _header">
+    <div class="mb-header-top">
+      <div class="btn-close text-gold mb-btn">
+        <svg class="bi bi-x" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path>
+            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path>
+        </svg>
+      </div>
       <div class="logo">
         <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo" height="50"></a>
       </div>
-      <div class="main-menu d-none d-lg-block">
-        {{ drupal_menu('main') }}
-      </div>
-      <div class="btn-menu-mobile d-lg-none d-block">
-        <i class="fad fa-bars"></i>
+      <div class="search-btn">
+        <a class="icon-search" style="">
+          <svg class="bi bi-search" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path>
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path>
+          </svg>
+        </a>
+        <a class="icon-close" style="display: none;">
+          <svg class="bi bi-x-circle" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path>
+            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path>
+          </svg>
+        </a>
       </div>
     </div>
-  </div>
-  <div id="header-mobile" class="d-lg-none d-block">
-    <div class="logo">
-      <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo" height="50"></a>
+
+    <div class="search-box sb" style="display:none;">
+      <div class="container">
+        <input class="search-input" type="text" placeholder="{{ 'Nhập từ khóa tìm kiếm ...'|t }}" name="s">
+        <button class="s-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
     </div>
-    <div class="main-menu-mobile">
+
+    <div class="mb-header-lang-wrapper">
+      <ul class="lang-nav">
+        <li class="active">
+          <a lang="vi"><img alt="VI" src="{{ urlf('img') }}themes/newhomes/images/vi.svg"></a>
+        </li>
+        <li>
+          <a lang="en"><img alt="EN" src="{{ urlf('img') }}themes/newhomes/images/en.svg"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-header-menu">
       {{ drupal_menu('main') }}
     </div>
+
+    {{ drupal_entity("block", "sociallinks", check_access=false) }}
   </div>
-  <div class="bg-main-menu-mb d-lg-none d-block"></div>
 </header>

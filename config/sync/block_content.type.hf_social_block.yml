@@ -1,0 +1,8 @@
+uuid: a1c73f0a-1edb-4be7-a197-67b34e6a28b4
+langcode: vi
+status: true
+dependencies: {  }
+id: hf_social_block
+label: 'Header/Footer - Social Block'
+revision: 0
+description: 'Facebook, In, Youtube links.'

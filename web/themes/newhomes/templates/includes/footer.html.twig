@@ -1,0 +1,24 @@
+<div id="footer">
+  <div class="container">
+    <div class="footer-logo">
+      <a href="{{ url('<front>') }}"><img src="{{ logo }}" alt="logo" height="50"></a>
+    </div>
+
+    <div class="footer_informations">
+      <div class="row">
+        <div class="col-md-5 addr">
+          {{ drupal_entity('block', 'footer_infomations', check_access=false) }}
+        </div>
+        <div class="col-md-2 fmenu">
+          {{ drupal_menu('footer-menu') }}
+        </div>
+        <div class="col-md-5 social">
+          {{ drupal_entity("block", "sociallinks", check_access=false) }}
+          <div class="register_for_news"></div>
+        </div>
+        <div class="division"></div>
+        <div class="copyright">{{ 'Copyright 2020 New Homes. All rights reserved'|t }}</div>
+      </div>
+    </div>
+  </div>
+</div>

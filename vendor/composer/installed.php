@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd4a5eaa7e39b6a97b52dbce649475a92aadfe71c',
+        'reference' => '1463a55c9292b44b0907592df9b1f58960fb72ab',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -216,6 +216,15 @@
             'replaced' => array(
                 0 => '8.9.18',
             ),
+        ),
+        'drupal/addtoany' => array(
+            'pretty_version' => '1.15.0',
+            'version' => '1.15.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/addtoany',
+            'aliases' => array(),
+            'reference' => '8.x-1.15',
+            'dev_requirement' => false,
         ),
         'drupal/admin_toolbar' => array(
             'pretty_version' => '3.0.2',
@@ -883,7 +892,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd4a5eaa7e39b6a97b52dbce649475a92aadfe71c',
+            'reference' => '1463a55c9292b44b0907592df9b1f58960fb72ab',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(

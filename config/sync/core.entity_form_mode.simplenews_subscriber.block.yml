@@ -1,0 +1,12 @@
+uuid: c4c48619-e184-4ade-8bc3-19c09b17b45f
+langcode: vi
+status: true
+dependencies:
+  module:
+    - simplenews
+_core:
+  default_config_hash: 7EIO8InzdeUlS1NCs5hq23QRzWmqAKGjeSqd3hQP62s
+id: simplenews_subscriber.block
+label: Khối
+targetEntityType: simplenews_subscriber
+cache: true

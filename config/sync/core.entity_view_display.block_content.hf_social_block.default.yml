@@ -1,0 +1,40 @@
+uuid: 3f7f12b8-e387-4153-94f1-ddf68f839634
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+    - field.field.block_content.hf_social_block.field_ht_facebook
+    - field.field.block_content.hf_social_block.field_ht_linked_in
+    - field.field.block_content.hf_social_block.field_ht_youtube
+id: block_content.hf_social_block.default
+targetEntityType: block_content
+bundle: hf_social_block
+mode: default
+content:
+  field_ht_facebook:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ht_linked_in:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ht_youtube:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

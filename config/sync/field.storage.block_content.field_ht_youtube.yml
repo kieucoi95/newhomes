@@ -1,0 +1,21 @@
+uuid: 19f99c9d-9a5e-4d19-9657-b7fc6b36f4d5
+langcode: vi
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_ht_youtube
+field_name: field_ht_youtube
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

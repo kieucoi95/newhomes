@@ -1,0 +1,21 @@
+uuid: e5d6372a-6d04-49b8-8e02-b595d0727e67
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+    - field.storage.block_content.field_ht_youtube
+id: block_content.hf_social_block.field_ht_youtube
+field_name: field_ht_youtube
+entity_type: block_content
+bundle: hf_social_block
+label: Youtube
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'https://www.youtube.com/'
+default_value_callback: ''
+settings: {  }
+field_type: string

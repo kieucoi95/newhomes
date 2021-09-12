@@ -1,0 +1,16 @@
+uuid: 8ac23d8f-4687-4cb6-b228-3c46fe92959d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.hf_social_block
+target_entity_type_id: block_content
+target_bundle: hf_social_block
+default_langcode: site_default
+language_alterable: false

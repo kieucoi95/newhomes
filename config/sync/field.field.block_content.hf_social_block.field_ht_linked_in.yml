@@ -1,0 +1,21 @@
+uuid: 5428477a-b44d-49f2-aebe-9fac412682be
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.hf_social_block
+    - field.storage.block_content.field_ht_linked_in
+id: block_content.hf_social_block.field_ht_linked_in
+field_name: field_ht_linked_in
+entity_type: block_content
+bundle: hf_social_block
+label: 'Linked in'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'https://www.linkedin.com/'
+default_value_callback: ''
+settings: {  }
+field_type: string

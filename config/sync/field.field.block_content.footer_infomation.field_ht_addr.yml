@@ -1,0 +1,19 @@
+uuid: fbba7c3d-e564-44fd-9ed4-9a6dfc5f180d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_infomation
+    - field.storage.block_content.field_ht_addr
+id: block_content.footer_infomation.field_ht_addr
+field_name: field_ht_addr
+entity_type: block_content
+bundle: footer_infomation
+label: 'Địa chỉ'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,8 @@
+uuid: 81592502-1bcd-48e0-8474-f22f95212345
+langcode: vi
+status: true
+dependencies: {  }
+id: footer_infomation
+label: 'Footer - Infomation'
+revision: 0
+description: 'All infomation text in the footer'

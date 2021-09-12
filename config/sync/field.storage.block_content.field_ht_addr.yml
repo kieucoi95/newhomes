@@ -1,0 +1,19 @@
+uuid: 62ad12b4-1ecb-421c-aa6c-5ea7b85e15f3
+langcode: vi
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_ht_addr
+field_name: field_ht_addr
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

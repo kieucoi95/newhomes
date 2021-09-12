@@ -1,0 +1,19 @@
+uuid: 72bd6966-cc23-499b-b207-659353e9a6cb
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_infomation
+    - field.storage.block_content.field_ht_link
+id: block_content.footer_infomation.field_ht_link
+field_name: field_ht_link
+entity_type: block_content
+bundle: footer_infomation
+label: website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

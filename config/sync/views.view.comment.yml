@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Chính
     position: 0
     display_options:
       access:
@@ -39,13 +39,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: 'Áp dụng'
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       pager:
         type: full
         options:
@@ -54,18 +54,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ trước'
+            next: 'sau ›'
+            first: '« đầu'
+            last: 'cuối »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Số mục trên một trang'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tất cả -'
             offset: false
-            offset_label: Offset
+            offset_label: 'Độ dịch'
           quantity: 9
       style:
         type: table
@@ -193,7 +193,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Subject
+          label: 'Tiêu đề'
           exclude: false
           alter:
             alter_text: false
@@ -452,7 +452,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Đã cập nhật'
           exclude: false
           alter:
             alter_text: false
@@ -519,7 +519,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Thao tác'
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -682,7 +682,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Subject
+            label: 'Tiêu đề'
             description: ''
             use_operator: false
             operator: subject_op
@@ -963,7 +963,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Subject
+            label: 'Tiêu đề'
             description: ''
             use_operator: false
             operator: subject_op
@@ -1146,7 +1146,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Subject
+          label: 'Tiêu đề'
           exclude: false
           alter:
             alter_text: false
@@ -1405,7 +1405,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Đã cập nhật'
           exclude: false
           alter:
             alter_text: false
@@ -1472,7 +1472,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Thao tác'
+          label: Operations
           exclude: false
           alter:
             alter_text: false

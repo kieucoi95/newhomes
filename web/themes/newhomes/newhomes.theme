@@ -387,17 +387,11 @@ function newhomes_preprocess_views_view(&$variables) {
                 $alt = '';
             }
 
-            // Link
-            if (!empty($result->_entity->field_number)) {
-                $number = $trans->field_link->value;
-            }
-
             $variables['items'][] = [
                 'alt' => $alt,
                 'logo' => $logo,
                 'img' => $img,
                 'title' => $title,
-                'link' => $link
             ];
         }
     }

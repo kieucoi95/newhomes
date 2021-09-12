@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1724c6fdad28ac58c9454e8f76811d6b1006f57a',
+        'reference' => 'd4a5eaa7e39b6a97b52dbce649475a92aadfe71c',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -883,7 +883,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1724c6fdad28ac58c9454e8f76811d6b1006f57a',
+            'reference' => 'd4a5eaa7e39b6a97b52dbce649475a92aadfe71c',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(
@@ -936,6 +936,15 @@
             'replaced' => array(
                 0 => '8.9.18',
             ),
+        ),
+        'drupal/simplenews' => array(
+            'pretty_version' => '2.0.0-beta2',
+            'version' => '2.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/simplenews',
+            'aliases' => array(),
+            'reference' => '8.x-2.0-beta2',
+            'dev_requirement' => false,
         ),
         'drupal/simpletest' => array(
             'dev_requirement' => false,

@@ -1,0 +1,25 @@
+uuid: fa8ce7f3-be99-4420-bf36-ef068510cd9a
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simplenews_issue
+  module:
+    - text
+_core:
+  default_config_hash: WmXguLYedqjDlEM-2yau5wACNAMvrbCVHXQUn4GQEDA
+id: node.simplenews_issue.body
+field_name: body
+entity_type: node
+bundle: simplenews_issue
+label: 'Nội dung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

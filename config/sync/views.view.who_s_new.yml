@@ -17,7 +17,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Chính
     position: 0
     display_options:
       access:
@@ -38,13 +38,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: 'Áp dụng'
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       pager:
         type: some
         options:
@@ -185,7 +185,7 @@ display:
     display_options:
       display_description: 'A list of new users'
       block_description: 'Who''s new'
-      block_category: User
+      block_category: 'Người dùng'
       display_extenders: {  }
     cache_metadata:
       contexts:

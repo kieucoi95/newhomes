@@ -1,0 +1,12 @@
+uuid: dd06ccc6-37ad-4134-919b-3a2aa36a166a
+langcode: vi
+status: true
+dependencies:
+  module:
+    - simplenews
+_core:
+  default_config_hash: ZNiTMgBURMLUyp3dwxIn7Zz_hREzPRpyF2M-Dm3e1BI
+id: simplenews_subscriber.page
+label: Trang
+targetEntityType: simplenews_subscriber
+cache: true

@@ -1,0 +1,10 @@
+uuid: 6721fe9c-5d9a-4f11-b1dd-bc3081c54fb0
+langcode: vi
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.token
+label: Token
+targetEntityType: paragraph
+cache: true

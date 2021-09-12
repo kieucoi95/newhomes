@@ -1,0 +1,34 @@
+uuid: ce0e14e4-c983-4351-9c63-24d739bf2882
+langcode: vi
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: content_path
+label: 'Content path'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  f683fef1-5600-4724-b1c3-eed6eacdfb14:
+    id: node_type
+    bundles:
+      du_an: du_an
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f683fef1-5600-4724-b1c3-eed6eacdfb14
+  abe1d309-d0e7-44cf-9e0a-76e517ad4295:
+    id: language
+    langcodes:
+      vi: vi
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: abe1d309-d0e7-44cf-9e0a-76e517ad4295
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: 'Ngôn ngữ'

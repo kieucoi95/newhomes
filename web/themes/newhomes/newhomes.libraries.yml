@@ -14,6 +14,13 @@ global-styling:
     - core/jquery
     - core/jquery.once
 
+news:
+  css:
+    theme:
+      css/ht-news.css: {}
+  js:
+    js/ht-news.js: {}
+
 fontawesome:
   css:
     theme:

@@ -1,0 +1,24 @@
+uuid: b2f64d49-b360-4819-ad0e-e53eefd350d6
+langcode: vi
+status: false
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - newhomes
+id: simplenews_subscription
+theme: newhomes
+region: footer
+weight: 0
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Simplenews subscription'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: ''
+  unique_id: 8ca9ebf8-69a6-4810-9cdb-e46e49548757
+visibility: {  }

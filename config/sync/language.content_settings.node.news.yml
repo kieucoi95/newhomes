@@ -1,0 +1,16 @@
+uuid: 1c4afa9a-dfdc-4bbe-b3e2-c30b485ff6c1
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.news
+target_entity_type_id: node
+target_bundle: news
+default_langcode: site_default
+language_alterable: false

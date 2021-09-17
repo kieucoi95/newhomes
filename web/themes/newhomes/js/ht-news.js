@@ -31,12 +31,17 @@
             }
         });
         fake_f += "</ul>";
+        fake_f += '<div class="ht_mobile_show open_filter"><a>☰</a></div>';
         $('.fake-filter-news').html(fake_f);
 
-        $(document).on('click', '.fake-filter-news a', function() {
+        $(document).on('click', '.fake-filter-news ul a', function() {
             let v = $(this).attr('_value');
             real_s.val(v);
             real_sm.trigger('click');
+        });
+
+        $(document).on('click', '.open_filter a', function() {
+            $(this).parents('.fake-filter-news').find('ul').toggleClass('open');
         });
     };
 })(jQuery, Drupal);

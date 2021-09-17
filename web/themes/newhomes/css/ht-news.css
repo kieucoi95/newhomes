@@ -317,4 +317,7 @@ h3.other_news::before {
         display: none;
         border: 0;
     }
+    .lastest_news_block>.row {
+        padding: 15px;
+    }
 }

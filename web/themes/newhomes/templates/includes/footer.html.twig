@@ -14,7 +14,9 @@
         </div>
         <div class="col-md-5 social">
           {{ drupal_entity("block", "sociallinks", check_access=false) }}
-          <div class="register_for_news"></div>
+          <div class="register_for_news">
+            {{ drupal_entity("block", "simplenews_subscription", check_access=false) }}
+          </div>
         </div>
         <div class="division"></div>
         <div class="copyright">{{ 'Copyright 2020 New Homes. All rights reserved'|t }}</div>

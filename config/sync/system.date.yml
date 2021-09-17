@@ -2,7 +2,7 @@ country:
   default: VN
 first_day: 0
 timezone:
-  default: Europe/Berlin
+  default: Asia/Ho_Chi_Minh
   user:
     configurable: true
     warn: false

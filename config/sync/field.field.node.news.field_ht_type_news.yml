@@ -1,0 +1,21 @@
+uuid: 639d86cb-b555-4235-a801-e7c3d160d60d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ht_type_news
+    - node.type.news
+  module:
+    - options
+id: node.news.field_ht_type_news
+field_name: field_ht_type_news
+entity_type: node
+bundle: news
+label: 'Loại tin tức'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

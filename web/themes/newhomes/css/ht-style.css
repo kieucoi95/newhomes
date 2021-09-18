@@ -134,6 +134,13 @@
     -webkit-box-orient: vertical
 }
 
+.three_dots_5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical
+}
+
 .three_dots_6 {
     overflow: hidden;
     display: -webkit-box;

@@ -28,7 +28,7 @@
             </a>
           </div>
           <div class="info-wrapper">
-            <h4 class="title"><a href="{{ link }}">{{ title }}</a></h4>
+            <h4 class="title three_dots_3"><a href="{{ link }}">{{ title }}</a></h4>
             <p class="created_time ht_reset_margin">
               <svg class="bi bi-clock" width="1em" height="1em" viewBox="0 0 16 16" fill="dark" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"></path>
@@ -36,7 +36,7 @@
               </svg>
               {{ created|date("d/m/Y") }}
             </p>
-            <div class="summary">{{ summary }}</div>
+            <div class="summary three_dots_5">{{ summary }}</div>
             <a href="{{ link }}" class="view_detail">{{ 'Xem thêm'|t }}</a>
           </div>
         </div>
@@ -55,7 +55,7 @@
                   <img src="{{ url_img(img.target_id, '294x187') }}" alt="{{ img.alt }}">
                 </div>
                 <div class="col-md-8 info_wrapper">
-                  <h4 class="title"><a href="{{ link }}">{{ title }}</a></h4>
+                  <h4 class="title three_dots_2"><a href="{{ link }}">{{ title }}</a></h4>
                   <p class="created_time ht_reset_margin">
                     <svg class="bi bi-clock" width="1em" height="1em" viewBox="0 0 16 16" fill="dark" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"></path>
@@ -63,7 +63,7 @@
                     </svg>
                     {{ created|date("d/m/Y") }}
                   </p>
-                  <div class="summary">{{ summary }}</div>
+                  <div class="summary three_dots_4">{{ summary }}</div>
                   <a href="{{ link }}" class="view_detail">{{ 'Xem thêm'|t }}</a>
                 </div>
               </div>

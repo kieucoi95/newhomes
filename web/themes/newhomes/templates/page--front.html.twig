@@ -47,6 +47,7 @@
 #}
 {{ attach_library('newhomes/swiper') }}
 {{ attach_library('newhomes/front_page') }}
+{{ attach_library('newhomes/news') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
 <main role="main">
   {# Slide banner #}
@@ -54,19 +55,23 @@
     {{ drupal_entity('block', 'homepageslidebanner') }}
   </div>
   {# about us #}
-  <div id="about-us" class="bg-dark-blue">
+  <div id="about-us" class="bg-dark">
     {{ drupal_entity('block', 'homepagegioithieu') }}
   </div>
   {# field of activity #}
-  <div id="field_of_activity" class="bg-dark">
+  <div id="field_of_activity" class="bg-dark-blue">
     {{ drupal_view('node_front_page', 'block_1') }}
   </div>
   {# project #}
-  <div id="project" class="bg-dark-blue">
+  <div id="project" class="bg-dark">
     {{ drupal_view('node_front_page', 'block_2') }}
   </div>
+  {# News #}
+  <div id="news" class="bg-dark-blue">
+    {{ drupal_view('node_functions_2', 'block_lastest_news') }}
+  </div>
   {# partner #}
-  <div id="partner" class="bg-dark-blue">
+  <div id="partner" class="bg-dark">
     {# {{ drupal_entity('block', 'homepagepartner') }} #}
     <div class="container">
       {# Tab #}

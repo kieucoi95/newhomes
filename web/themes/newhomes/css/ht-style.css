@@ -505,6 +505,10 @@ header.header-sticky {
     color: #ffffff;
 }
 
+header a {
+    cursor: pointer;
+}
+
 @-webkit-keyframes stickyShow {
     0% {
         top: -95px;
@@ -613,6 +617,41 @@ ul.contact-nav li p,
     color: #ffffff;
     font-style: italic;
     font-size: 12px;
+}
+
+.register_for_news {
+    margin-top: 30px;
+}
+
+input[name="register_email"] {
+    height: 40px;
+    width: 290px;
+    background-color: #2e2e3f;
+    border: 0;
+    color: #ffffff;
+    padding: 12px 15px;
+}
+
+#register_email {
+    position: relative;
+}
+
+#register_email button {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    right: calc(100% - 290px);
+}
+
+#register_email button svg {
+    color: #ffffff;
+}
+
+#footer input,
+#footer button {
+    outline: 0;
 }
 
 @media(max-width: 769px) {

@@ -1,0 +1,24 @@
+{% set n = entity_trans(node) %}
+{% set img = n.get('field_ht_image').getValue()[0] %}
+{% set title = n.getTitle() %}
+{% set created = n.getCreatedTime() %}
+{% set summary = n.get('body').getValue()[0]['summary'] %}
+{% set link = get_alias_from_nid(n.id()) %}
+
+<div class="node-teaser node-news-teaser">
+    <div class="img_wrapper">
+        <a href="{{ link }}"><img src="{{ url_img(img.target_id, '425x256') }}" alt="{{ img.alt }}" width="425" height="256"></a>
+    </div>
+    <div class="info_new">
+        <h3 class="news_tit"><a href="{{ link }}">{{ title }}</a></h3>
+        <p class="created_time ht_reset_margin">
+            <svg class="bi bi-clock" width="1em" height="1em" viewBox="0 0 16 16" fill="dark" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"></path>
+              <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+            </svg>
+            {{ created|date("d/m/Y") }}
+        </p>
+        <div class="summary three_dots_2">{{ summary }}</div>
+        <a href="{{ link }}" class="view_detail">{{ 'XEM THÊM'|t }}</a>
+    </div>
+</div>

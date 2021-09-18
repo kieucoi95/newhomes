@@ -1,0 +1,30 @@
+uuid: 8547adc3-b153-487d-9585-84650bca09d5
+langcode: vi
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ht_type_news
+field_name: field_ht_type_news
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Tin tập đoàn'
+    -
+      value: '1'
+      label: 'Tin dự án'
+    -
+      value: '2'
+      label: 'Tin thị trường'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

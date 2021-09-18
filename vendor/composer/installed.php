@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1463a55c9292b44b0907592df9b1f58960fb72ab',
+        'reference' => '806b2124df9d5e6642fca899a6321d2237cc4422',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -892,7 +892,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1463a55c9292b44b0907592df9b1f58960fb72ab',
+            'reference' => '806b2124df9d5e6642fca899a6321d2237cc4422',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(
@@ -960,6 +960,15 @@
             'replaced' => array(
                 0 => '8.9.18',
             ),
+        ),
+        'drupal/smtp' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/smtp',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
@@ -1292,6 +1301,15 @@
             'install_path' => __DIR__ . '/../pear/pear_exception',
             'aliases' => array(),
             'reference' => 'dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.5.1',
+            'version' => '6.5.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'dd803df5ad7492e1b40637f7ebd258fee5ca7355',
             'dev_requirement' => false,
         ),
         'psr/container' => array(

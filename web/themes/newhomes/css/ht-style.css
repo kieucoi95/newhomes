@@ -266,6 +266,14 @@
 
 /* Header */
 
+body.toolbar-icon-8 {
+    margin-top: 84px;
+}
+
+body.toolbar-icon-8 header {
+    top: 84px;
+}
+
 body {
     padding-top: 95px;
 }
@@ -380,6 +388,11 @@ header .header-fix>.container .right-header .lang-box ul>li {
 header.header-sticky {
     -webkit-animation: stickyShow 1s;
     animation: stickyShow 1s;
+}
+
+body.toolbar-icon-8 header.header-sticky {
+    -webkit-animation: stickyShow-admin 1s;
+    animation: stickyShow-admin 1s;
 }
 
 .mb-header {
@@ -531,6 +544,24 @@ header a {
     }
     to {
         top: 0;
+    }
+}
+
+@-webkit-keyframes stickyShow-admin {
+    0% {
+        top: -95px;
+    }
+    to {
+        top: 84px;
+    }
+}
+
+@keyframes stickyShow-admin {
+    0% {
+        top: -95px;
+    }
+    to {
+        top: 84px;
     }
 }
 

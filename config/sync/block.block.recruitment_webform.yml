@@ -1,0 +1,25 @@
+uuid: 2cb7fc24-2cb9-498c-a693-39d3d764e3cf
+langcode: vi
+status: false
+dependencies:
+  config:
+    - webform.webform.webform_tuyen_dung
+  module:
+    - webform
+  theme:
+    - newhomes
+id: recruitment_webform
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: '0'
+  webform_id: webform_tuyen_dung
+  default_data: ''
+  redirect: false
+visibility: {  }

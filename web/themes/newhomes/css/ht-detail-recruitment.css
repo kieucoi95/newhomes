@@ -149,6 +149,61 @@
     height: auto;
 }
 
+.node-recruitment-full .contact_form {
+    margin-top: 40px;
+    padding: 5px 15px;
+    border: 1px solid var(--main-color);
+    width: 100%;
+}
+
+.node-recruitment-full .contact_form input:not([type="submit"]) {
+    width: 100%;
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem .6rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, .5);
+    background-color: #1e1e28;
+    background-clip: padding-box;
+    border: 1px solid #1e1e28;
+    border-radius: 0;
+}
+
+.node-recruitment-full .contact_form .form-actions input[type="submit"] {
+    background-color: var(--main-color);
+    color: #1e1e28;
+    border-radius: 20px;
+    text-transform: uppercase;
+    max-width: 262px;
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding: 5px 0px;
+}
+
+.node-recruitment-full .contact_form textarea {
+    width: 100%;
+    padding: .5rem .6rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, .5);
+    background-color: #1e1e28;
+    background-clip: padding-box;
+    border: 1px solid #1e1e28;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.node-recruitment-full .contact_form .form-type-managed-file .description {
+    display: none;
+}
+
+.node-recruitment-full .contact_form label {
+    margin-top: 10px;
+}
+
 @media (max-width: 992px) {
     .node-recruitment-full .views-element-container .form--inline {
         flex-direction: column;

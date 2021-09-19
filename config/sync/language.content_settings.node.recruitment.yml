@@ -1,0 +1,16 @@
+uuid: e4a62637-4428-454a-925e-9999219957a9
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.recruitment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.recruitment
+target_entity_type_id: node
+target_bundle: recruitment
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,16 @@
+uuid: a89f1365-7b6d-4224-bc38-3099edac5b9a
+langcode: vi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.place
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.place
+target_entity_type_id: taxonomy_term
+target_bundle: place
+default_langcode: site_default
+language_alterable: false

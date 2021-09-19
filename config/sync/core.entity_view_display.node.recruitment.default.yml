@@ -1,0 +1,80 @@
+uuid: 00dd30b7-b09a-489d-b66e-7717bbf28123
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.node.recruitment.body
+    - field.field.node.recruitment.field_ht_place
+    - field.field.node.recruitment.field_ht_position
+    - field.field.node.recruitment.field_ht_salary
+    - field.field.node.recruitment.field_ht_time
+    - field.field.node.recruitment.field_ht_word_place
+    - field.field.node.recruitment.field_image
+    - field.field.node.recruitment.field_number
+    - image.style.1920x810
+    - node.type.recruitment
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.recruitment.default
+targetEntityType: node
+bundle: recruitment
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ht_salary:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ht_time:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: vn_format
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ht_word_place:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 1920x810
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_number:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  addtoany: true
+  field_ht_place: true
+  field_ht_position: true
+  langcode: true
+  links: true

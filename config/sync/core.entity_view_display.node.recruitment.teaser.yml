@@ -1,0 +1,46 @@
+uuid: fbbc7ae1-3567-42f6-9f70-200248afe5a1
+langcode: vi
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recruitment.body
+    - field.field.node.recruitment.field_ht_place
+    - field.field.node.recruitment.field_ht_position
+    - field.field.node.recruitment.field_ht_salary
+    - field.field.node.recruitment.field_ht_time
+    - field.field.node.recruitment.field_ht_word_place
+    - field.field.node.recruitment.field_image
+    - field.field.node.recruitment.field_number
+    - node.type.recruitment
+  module:
+    - text
+    - user
+id: node.recruitment.teaser
+targetEntityType: node
+bundle: recruitment
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_ht_place: true
+  field_ht_position: true
+  field_ht_salary: true
+  field_ht_time: true
+  field_ht_word_place: true
+  field_image: true
+  field_number: true
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: 5b317e88-a911-44d1-b348-950d8fdd940d
+langcode: vi
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_ht_benefits
+field_name: field_ht_benefits
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

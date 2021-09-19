@@ -1,0 +1,16 @@
+uuid: 51752469-9797-4d6c-8650-aea1e2836476
+langcode: vi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.position
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.position
+target_entity_type_id: taxonomy_term
+target_bundle: position
+default_langcode: site_default
+language_alterable: false

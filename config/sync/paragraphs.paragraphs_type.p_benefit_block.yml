@@ -1,0 +1,10 @@
+uuid: e6a7946f-4353-4d88-84b7-14ffa55701ce
+langcode: vi
+status: true
+dependencies: {  }
+id: p_benefit_block
+label: 'Tuyển dụng - Khối lợi ích'
+icon_uuid: null
+icon_default: null
+description: 'Tuyển dụng - Khối lợi ích'
+behavior_plugins: {  }

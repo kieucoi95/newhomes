@@ -1,0 +1,21 @@
+uuid: 4d5a2176-b508-4fdf-9b8a-2a5663b914a5
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ht_salary
+    - node.type.recruitment
+id: node.recruitment.field_ht_salary
+field_name: field_ht_salary
+entity_type: node
+bundle: recruitment
+label: 'Mức lương'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Theo thỏa thuận'
+default_value_callback: ''
+settings: {  }
+field_type: string

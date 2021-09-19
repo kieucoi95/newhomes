@@ -1,0 +1,8 @@
+uuid: d59ec39c-ab3e-4521-af3b-29ea9b5fb62c
+langcode: vi
+status: true
+dependencies: {  }
+name: 'Tuyển dụng - Địa điểm'
+vid: place
+description: ''
+weight: 0

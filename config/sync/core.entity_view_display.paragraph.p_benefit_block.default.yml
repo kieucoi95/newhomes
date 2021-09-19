@@ -1,0 +1,34 @@
+uuid: e0a6cd7e-b49a-409e-9095-6162586717f9
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_benefit_block.field_ht_benefits
+    - field.field.paragraph.p_benefit_block.field_image
+    - image.style.630x460
+    - paragraphs.paragraphs_type.p_benefit_block
+  module:
+    - image
+    - text
+id: paragraph.p_benefit_block.default
+targetEntityType: paragraph
+bundle: p_benefit_block
+mode: default
+content:
+  field_ht_benefits:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 630x460
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

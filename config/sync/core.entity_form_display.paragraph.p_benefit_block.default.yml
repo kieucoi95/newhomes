@@ -1,0 +1,38 @@
+uuid: 0e63438f-136a-4d7a-89a2-74fb2118f349
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_benefit_block.field_ht_benefits
+    - field.field.paragraph.p_benefit_block.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.p_benefit_block
+  module:
+    - image
+    - text
+id: paragraph.p_benefit_block.default
+targetEntityType: paragraph
+bundle: p_benefit_block
+mode: default
+content:
+  field_ht_benefits:
+    weight: 0
+    settings:
+      rows: 9
+      placeholder: ''
+      summary_rows: 3
+      show_summary: true
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

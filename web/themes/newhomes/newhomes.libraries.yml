@@ -28,6 +28,16 @@ detail-news:
   js:
     js/ht-news.js: {}
 
+recruitment:
+  css:
+    theme:
+      css/ht-recruitment.css: {}
+
+detail-recruitment:
+  css:
+    theme:
+      css/ht-detail-recruitment.css: {}
+
 fontawesome:
   css:
     theme:

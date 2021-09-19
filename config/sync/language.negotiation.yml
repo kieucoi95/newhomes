@@ -5,6 +5,7 @@ url:
   prefixes:
     en: en
     vi: vi
+    '': null
   domains:
     en: ''
     vi: ''

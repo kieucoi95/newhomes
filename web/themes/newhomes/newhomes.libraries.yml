@@ -21,6 +21,13 @@ news:
   js:
     js/ht-news.js: {}
 
+detail-news:
+  css:
+    theme:
+      css/ht-detail-news.css: {}
+  js:
+    js/ht-news.js: {}
+
 fontawesome:
   css:
     theme:

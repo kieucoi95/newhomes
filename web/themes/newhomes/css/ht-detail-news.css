@@ -1,0 +1,123 @@
+.node-news-teaser img {
+    height: auto;
+}
+
+.node-news-teaser .img_wrapper {
+    margin-bottom: 10px;
+}
+
+.node-news-teaser .info_new {
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.node-news-teaser .info_new h3 a {
+    color: var(--main-color)!important;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.node-news-teaser .info_new .created_time {
+    color: #ffffff;
+    font-size: 11px;
+    margin-bottom: 1rem;
+}
+
+.node-news-teaser .info_new .created_time svg {
+    fill: #ffffff;
+}
+
+.node-news-teaser .info_new .summary *,
+.node-news-teaser .info_new .summary {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.node-news-teaser .info_new .view_detail {
+    color: #212529;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    text-transform: uppercase!important;
+    padding: .375rem 1.5rem;
+    border-radius: 50rem!important;
+}
+
+.detail-news-banner {
+    height: 153px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-news-banner h3 {
+    font-size: 20px;
+    color: #2e2e3f;
+    font-weight: bold;
+    border-left: 2px solid #ed1d24 !important;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.news-header .cat>div {
+    color: var(--main-color);
+}
+
+.news-header .cat,
+.news-header .created_date {
+    display: flex;
+    align-items: center;
+}
+
+.news-header .cat svg {
+    font-size: 21px;
+}
+
+.news-header .created_date svg {
+    margin-right: 5px;
+}
+
+.news-header .share>span>a>span {
+    background-color: transparent!important;
+}
+
+.news-header .share>span>a>span svg {
+    width: 25px;
+}
+
+.news-header .share>span>a>span svg path {
+    fill: var(--main-color)
+}
+
+.node-news-full {
+    background-color: #2e2e3f;
+}
+
+.node-news-full .col-lg-8 .content {
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 480px) {
+    .news-header {
+        flex-wrap: wrap;
+    }
+    .news-header>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .news-header>div.created_date {
+        margin-bottom: 6px;
+    }
+}

@@ -29,6 +29,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  ht_custom: 0
   image: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0

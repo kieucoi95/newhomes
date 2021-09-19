@@ -1,0 +1,8 @@
+uuid: 3b9c6fcd-2acc-419d-aaab-6ea9a40a2909
+langcode: vi
+status: true
+dependencies: {  }
+id: vn_format
+label: 'VN Format'
+locked: false
+pattern: d/m/Y

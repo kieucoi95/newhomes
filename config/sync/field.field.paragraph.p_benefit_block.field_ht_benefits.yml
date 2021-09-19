@@ -1,0 +1,23 @@
+uuid: 7e783ab9-f265-4601-ac8d-7c9f30f01de6
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ht_benefits
+    - paragraphs.paragraphs_type.p_benefit_block
+  module:
+    - text
+id: paragraph.p_benefit_block.field_ht_benefits
+field_name: field_ht_benefits
+entity_type: paragraph
+bundle: p_benefit_block
+label: 'Các lợi ích'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

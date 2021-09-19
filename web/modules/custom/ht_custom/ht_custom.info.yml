@@ -1,0 +1,6 @@
+name: HT Custom
+description: "HT Custom module."
+package: 'HT'
+type: module
+core: 8.x
+version: '8.x-1.0'

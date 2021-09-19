@@ -1,0 +1,11 @@
+ht-custom-styling:
+  version: VERSION
+  css:
+    theme:
+      css/ht_custom.css: {}
+
+ht-custom:
+  js:
+    js/ht_custom.js: {}
+  dependencies:
+    - core/jquery

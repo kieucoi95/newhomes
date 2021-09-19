@@ -1,0 +1,15 @@
+uuid: ca4018e4-ca61-4878-9f4e-73cb6ac76248
+langcode: vi
+status: true
+dependencies: {  }
+name: 630x460
+label: 630x460
+effects:
+  bf92a98c-2bca-49f8-81a7-b56e29251a05:
+    uuid: bf92a98c-2bca-49f8-81a7-b56e29251a05
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 630
+      height: 460
+      anchor: center-center

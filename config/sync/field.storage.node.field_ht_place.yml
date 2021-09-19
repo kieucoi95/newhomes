@@ -1,0 +1,20 @@
+uuid: 80b0798e-f08b-4102-a8dd-40c5b698b0b8
+langcode: vi
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_ht_place
+field_name: field_ht_place
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

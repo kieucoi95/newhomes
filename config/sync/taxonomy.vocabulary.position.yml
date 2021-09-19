@@ -1,0 +1,8 @@
+uuid: 309a4510-6651-4a32-b82e-298b3be63510
+langcode: vi
+status: true
+dependencies: {  }
+name: 'Tuyển dụng - Chức vụ'
+vid: position
+description: 'Tuyển dụng - Chức vụ'
+weight: 0

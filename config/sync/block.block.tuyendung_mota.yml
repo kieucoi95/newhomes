@@ -1,0 +1,31 @@
+uuid: 1603a964-da70-473a-9461-e418a00f8bb3
+langcode: vi
+status: true
+dependencies:
+  content:
+    - 'block_content:des_block_recruitment:1a7338aa-a2d4-4b88-b6e0-7bc4f39c7fbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - newhomes
+id: tuyendung_mota
+theme: newhomes
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1a7338aa-a2d4-4b88-b6e0-7bc4f39c7fbb'
+settings:
+  id: 'block_content:1a7338aa-a2d4-4b88-b6e0-7bc4f39c7fbb'
+  label: 'Tuyển dụng - Mô tả'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /tuyen-dung
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 7fed42a9-d28b-4500-9849-3f6899a00187
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ht_time
+    - node.type.recruitment
+  module:
+    - datetime
+id: node.recruitment.field_ht_time
+field_name: field_ht_time
+entity_type: node
+bundle: recruitment
+label: 'Thời gian ứng tuyển'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

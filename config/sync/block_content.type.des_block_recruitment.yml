@@ -1,0 +1,8 @@
+uuid: b98ad213-f63a-4b47-a11a-435437358f52
+langcode: vi
+status: true
+dependencies: {  }
+id: des_block_recruitment
+label: 'Trang Tuyển dụng - Khối mô tả'
+revision: 0
+description: 'Banner, overview v.v.'

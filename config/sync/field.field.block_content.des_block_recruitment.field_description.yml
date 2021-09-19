@@ -1,0 +1,19 @@
+uuid: 455b4a92-9ff6-4ff9-951b-90c43287ec7f
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.des_block_recruitment
+    - field.storage.block_content.field_description
+id: block_content.des_block_recruitment.field_description
+field_name: field_description
+entity_type: block_content
+bundle: des_block_recruitment
+label: 'Nội dung Khối mô tả'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

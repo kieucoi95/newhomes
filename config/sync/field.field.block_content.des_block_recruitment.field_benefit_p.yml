@@ -1,0 +1,37 @@
+uuid: 91e7435a-94ea-494e-8171-e140bfcc9f32
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.des_block_recruitment
+    - field.storage.block_content.field_benefit_p
+    - paragraphs.paragraphs_type.p_benefit_block
+  module:
+    - entity_reference_revisions
+id: block_content.des_block_recruitment.field_benefit_p
+field_name: field_benefit_p
+entity_type: block_content
+bundle: des_block_recruitment
+label: 'Khối lợi ích'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      p_benefit_block: p_benefit_block
+    target_bundles_drag_drop:
+      gioi_thieu_cong_ty_thanh_vien:
+        weight: 4
+        enabled: false
+      gioi_thieu_tam_nhin_su_menh:
+        weight: 5
+        enabled: false
+      p_benefit_block:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -494,3 +494,18 @@ function newhomes_theme_suggestions_block_alter(array &$suggestions, array $vari
         array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
     }
 }
+
+/**
+ * Implements template_preprocess_field().
+ */
+function newhomes_preprocess_field(&$variables, $hook) {
+    $element = $variables['element'];
+    if ($element['#field_name'] == 'field_ht_benefits') {
+        $delta = 0;
+        $variables['summary'] = [];
+        while (!empty($element[$delta])) {
+            $variables['summary'][$delta] = $element['#items'][$delta]->getValue()['summary'];
+            $delta++;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+uuid: c3fe1b8e-bf0c-42b9-b512-dae64ced03f5
+langcode: vi
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recruitment
+  module:
+    - text
+id: node.recruitment.body
+field_name: body
+entity_type: node
+bundle: recruitment
+label: Body
+description: "Dùng thẻ heading 5 để định nghĩa các tiêu đề trong body <br>\r\nVí dụ như các tiêu đề \"<b>Mô tả chi tiết</b>, <b>Yêu cầu công việc</b> v.v. \""
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

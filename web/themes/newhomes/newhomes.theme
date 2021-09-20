@@ -48,11 +48,6 @@ function newhomes_preprocess_block(&$variables) {
     $variables['base_path'] = base_path();
     $content = $variables['elements']['content'];
 
-    // Page title
-    $request = \Drupal::request();
-    $route_match = \Drupal::routeMatch();
-    $route = \Drupal::routeMatch()->getCurrentRouteMatch()->getRouteObject();
-    $variables['page_title'] = $route->getDefault('_title');
     if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
         $blockType = $content['#block_content']->bundle();
 

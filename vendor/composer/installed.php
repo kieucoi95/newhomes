@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3b2ce7b851ee13c1a2dda24adc34ab62642f6869',
+        'reference' => '345df187a2cd42a03e9ed52be84559faa742ac84',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -796,6 +796,15 @@
                 0 => '8.9.19',
             ),
         ),
+        'drupal/metatag' => array(
+            'pretty_version' => '1.16.0',
+            'version' => '1.16.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/metatag',
+            'aliases' => array(),
+            'reference' => '8.x-1.16',
+            'dev_requirement' => false,
+        ),
         'drupal/migrate' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -892,7 +901,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3b2ce7b851ee13c1a2dda24adc34ab62642f6869',
+            'reference' => '345df187a2cd42a03e9ed52be84559faa742ac84',
             'dev_requirement' => false,
         ),
         'drupal/recreate_block_content' => array(

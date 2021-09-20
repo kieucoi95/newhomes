@@ -48,6 +48,10 @@
 {{ attach_library('newhomes/fontawesome') }}
 {% include directory ~ '/templates/includes/header.html.twig' %}
 <main role="main" class="bg-dark-blue">
+    <div class="page-banner">
+        <h1 class="page-title">{{ 'Dự án' | t }}</h1>
+    </div>
+    
     <div class="container">
         {{ drupal_view('taxonomy_functions', 'block_1') }}
         {{ drupal_view('node_front_page', 'page_2') }}

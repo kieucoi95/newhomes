@@ -203,6 +203,23 @@ h2.gallery_title {
     padding-top: 3rem;
 }
 
+.page-banner {
+    height: 153px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-banner .page-title {
+    font-size: 20px;
+    color: #2e2e3f;
+    font-weight: bold;
+    border-left: 2px solid #ed1d24 !important;
+    display: inline-block;
+    padding-left: 10px;
+}
+
 @media (max-width: 768px) {
     .project_info {
         margin-bottom: 30px;
@@ -215,5 +232,25 @@ h2.gallery_title {
     .field--label-inline .field__label,
     .field--label-inline .field__item {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .category_list {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    /* width */
+    .category_list::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    /* Handle */
+    .category_list::-webkit-scrollbar-thumb {
+        border-radius: 3px;
     }
 }

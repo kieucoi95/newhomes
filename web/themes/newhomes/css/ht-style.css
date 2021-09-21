@@ -336,7 +336,8 @@ header .header-fix>.container {
 }
 
 header .header-fix>.container .logo img {
-    width: 122px;
+    width: auto;
+    max-height: 75px;
 }
 
 header .header-fix>.container .main-menu {

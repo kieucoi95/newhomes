@@ -365,7 +365,7 @@ header .header-fix>.container .main-menu>ul>li>a {
 
 header .header-fix>.container .main-menu>ul>li>a:hover,
 header .header-fix>.container .main-menu>ul>li>a.is-active {
-    color: #f5cc95;
+    color: var(--main-color);
 }
 
 header .header-fix>.container .right-header {
@@ -439,7 +439,7 @@ body.toolbar-icon-8 header.header-sticky {
 }
 
 .social-wrapper>div a {
-    color: #f5cc95;
+    color: var(--main-color);
     font-size: 22px;
 }
 
@@ -489,7 +489,7 @@ body.toolbar-icon-8 header.header-sticky {
 }
 
 .mb-header-top .search-btn a svg {
-    color: #f5cc95;
+    color: var(--main-color);
     width: 28px;
     height: 28px;
 }
@@ -579,10 +579,10 @@ header a {
     header .header-fix>.container .right-header .search-btn svg {
         width: 28px;
         height: 28px;
-        fill: #f5cc95!important;
+        fill: var(--main-color)!important;
     }
     .text-gold svg {
-        color: #f5cc95!important;
+        color: var(--main-color)!important;
     }
 }
 

@@ -1,9 +1,9 @@
 hash_expiration: 86400
 newsletter:
-  format: plain
-  priority: 0
+  format: html
+  priority: 2
   receipt: true
-  from_address: nghiemkieu95@gmail.com
+  from_address: smptest.vin@gmail.com
   from_name: 'New Homes'
 subscriber:
   sync_fields: true

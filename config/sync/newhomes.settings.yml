@@ -5,6 +5,8 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://logo-newhomes_0.png'
+  path: 'public://logo.png'
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://favicon.png'
+  mimetype: image/png

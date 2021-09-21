@@ -10,16 +10,17 @@ label: 'Content path'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  319d189f-5e26-4d53-9b74-90ac130d1d78:
+  15a7e1be-48e5-430e-9581-f8441b1098c1:
     id: node_type
     bundles:
       du_an: du_an
       news: news
+      recruitment: recruitment
     negate: false
     context_mapping:
       node: node
-    uuid: 319d189f-5e26-4d53-9b74-90ac130d1d78
-  dc806d3f-7507-42a1-bfa9-b075b290dcf0:
+    uuid: 15a7e1be-48e5-430e-9581-f8441b1098c1
+  ad667610-8982-4375-80ac-db301469759d:
     id: language
     langcodes:
       vi: vi
@@ -27,7 +28,7 @@ selection_criteria:
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: dc806d3f-7507-42a1-bfa9-b075b290dcf0
+    uuid: ad667610-8982-4375-80ac-db301469759d
 selection_logic: and
 weight: -10
 relationships:

@@ -368,6 +368,10 @@ background: var(--main-color);
     padding: 3rem 0;
 }
 
+#news .block-right img {
+    object-fit: cover;
+}
+
 @media (min-width: 576px) {
     .path-gioi-thieu #about-us .desc {
         max-height: 250px;

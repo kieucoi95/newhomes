@@ -3143,3 +3143,23 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: 'P4: Page not found'
+    position: 10
+    display_options:
+      display_extenders: {  }
+      path: '404'
+      title: 'Page not found'
+      defaults:
+        title: false
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

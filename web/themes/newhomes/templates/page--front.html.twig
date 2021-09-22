@@ -76,8 +76,10 @@
   <div id="partner" class="bg-dark">
     {# {{ drupal_entity('block', 'homepagepartner') }} #}
     <div class="container">
+      <h2 class="block-title">{{ 'Đối tác' | t }}</h2>
+      {{ drupal_view('node_front_page', 'block_3') }}
       {# Tab #}
-      <div class="nav" id="partner-tab" role="tablist">
+      {# <div class="nav" id="partner-tab" role="tablist">
           <a class="active" id="subsidiaries-tab" data-toggle="tab" href="#subsidiaries" role="tab" aria-controls="subsidiaries" aria-selected="true">{{ 'Công ty thành viên' | t }}</a>
           <a class="" id="nav-partner-tab" data-toggle="tab" href="#nav-partner" role="tab" aria-controls="nav-partner" aria-selected="false">{{ 'Đối tác' | t }}</a>
       </div>
@@ -88,7 +90,7 @@
           <div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab">
               {{ drupal_view('node_front_page', 'block_3') }}
           </div>
-      </div>
+      </div> #}
     </div>
   </div>
 </main>

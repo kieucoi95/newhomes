@@ -90,6 +90,7 @@ function newhomes_preprocess(&$variables) {
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
 function newhomes_preprocess_views_view(&$variables) {
+    $variables['base_path'] = base_path();
     $view = $variables['view'];
     $id = $view->id();
     $name = $variables['display_id'];

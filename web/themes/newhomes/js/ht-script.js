@@ -13,6 +13,8 @@
             Drupal.ht_main.header();
             // Footer
             Drupal.ht_main.footer();
+            // Search box
+            Drupal.ht_main.searchBox();
         });
     };
 
@@ -63,6 +65,17 @@
             input.val(val);
             submit.trigger('click');
             return false;
+        });
+    };
+
+    Drupal.ht_main.searchBox = function() {
+        let bs = $('input[name="s"]');
+        bs.on('keyup', function(event) {
+            let keycode = (event.keyCode ? event.keyCode : event.which);
+            let val = $(this).val();
+            if (keycode == 13) {
+                window.location.href = drupalSettings.path.baseUrl + drupalSettings.path.pathPrefix + 'search?title=' + val;
+            }
         });
     };
 })(jQuery, Drupal);
